@@ -1,0 +1,106 @@
+@layout("/common/_form.html",{js:["/assets/admin/orders/orders_down.js"]}){
+
+<form class="layui-form" id="ordersForm" lay-filter="ordersForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">下单</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <table class="layui-table" id="table" lay-filter="table">
+                        <thead>
+                        <tr>
+                            <td>颜色</td>
+                            <td>订单数量</td>
+                            <td>操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @for(c in color){
+                        <tr>
+                            <td><input type="text" value="${c.color}" disabled="disabled" class="layui-input" name="color"></td>
+                            <td><input type="number" value="0"  class="layui-input" name="colorNum"></td>
+                            <td>
+                                <a class="layui-btn layui-btn-xs add">添加</a>
+                                <a class="layui-btn layui-btn-danger layui-btn-xs del">删除</a>
+                            </td>
+                        </tr>
+                        @}
+                        </tbody>
+                    </table>
+                    <input name="id" type="hidden"/>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">数量</label>
+                        <div class="layui-input-block">
+                            <input id="allcount" name="allcount" placeholder="请输入数量" type="text" class="layui-input" lay-verify=""/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">单位</label>
+                        <div class="layui-input-block">
+                            <select name="units" lay-filter="units">
+                                <option value="件" selected="">件</option>
+                                <option value="SF">SF</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">订单进度</label>
+                        <div class="layui-input-block">
+                            <select name="orderProgress" lay-filter="orderProgress">
+                                <option value="0" selected="">未下单</option>
+                                <option value="1">开发</option>
+                                <option value="2">首样</option>
+                                <option value="3">改版</option>
+                                <option value="4">翻样</option>
+                                <option value="5">产前样</option>
+                                <option value="6">首单</option>
+                                <option value="7">翻单</option>
+                                <option value="8">补片（打样）</option>
+                                <option value="9">补片（大货）</option>
+                                <option value="10">返工（打样）</option>
+                                <option value="11">返工（大货）</option>
+                                <option value="12">重做（打样）</option>
+                                <option value="13">重做（大货）</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">订单类型</label>
+                        <div class="layui-input-block">
+                            <select name="orderType" lay-filter="orderType">
+                                @for(n in role){
+                                <option value="${n.id}">${n.name}</option>
+                                @}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">交货时间</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="overTime" id="overTime" placeholder="yyyy-MM-dd HH:mm:ss" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">备注</label>
+                        <div class="layui-input-block">
+                            <input id="note" name="note" placeholder="请输入备注" type="text" class="layui-input" lay-verify="" />
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">打印生产单</label>
+                        <div class="layui-input-block">
+                            <input type="checkbox" id="flag" name="close" lay-skin="switch" lay-filter="switchTest" lay-text="ON|OFF">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

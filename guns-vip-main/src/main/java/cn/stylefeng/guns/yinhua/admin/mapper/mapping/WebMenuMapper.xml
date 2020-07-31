@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.admin.mapper.WebMenuMapper">
+    <select id="customPageList" resultType="java.util.Map">
+       SELECT a.role_id,b.name FROM web_menu_role a
+LEFT JOIN sys_role b ON b.role_id = a.role_id
+GROUP BY a.role_id
+    </select>
+    <select id="selectListById" resultType="java.util.Map">
+        select * from web_menu_role where role_id = #{id}
+    </select>
+</mapper>

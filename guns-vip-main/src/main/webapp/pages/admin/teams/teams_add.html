@@ -1,0 +1,71 @@
+@layout("/common/_form.html",{js:["/assets/admin/teams/teams_add.js"]}){
+
+<form class="layui-form" id="orderRoleChildForm" lay-filter="orderRoleChildForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">小组添加</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="id" type="hidden"/>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">小组名</label>
+                        <div class="layui-input-block">
+                            <input id="name" name="name" placeholder="请输入小组名" type="text" class="layui-input" lay-verify=""/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">小组类型</label>
+                        <div class="layui-input-block">
+                            <select  name="type" lay-filter="type">
+                                <option  value="1" selected="">印花类小组</option>
+                                <option  value="2">激光类小组</option>
+                                <option  value="3">移膜类小组</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">重写角色：</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="show" value="1" title="是" />
+                            <input type="radio" name="show" value="0" title="否" checked/>
+                        </div>
+                    </div>
+                    <table class="layui-table" id="table" lay-filter="table">
+                        <a class="layui-btn layui-btn-xs add">添加人员</a>
+                        <thead>
+                        <tr>
+                            <td>员工</td>
+                            <td>岗位</td>
+                            <td>操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <select id="user" name="user" lay-filter="user">
+                                </select>
+                            </td>
+                            <td>
+                                <select id="leader" name="leader" lay-filter="leader">
+                                    <option  value="1">组长</option>
+                                    <option  value="2">副组长</option>
+                                    <option  value="3" selected="">组员</option>
+                                </select></td>
+                            <td>
+                                <a class="layui-btn layui-btn-danger layui-btn-xs del">删除</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <a class="layui-btn" lay-filter="btnSubmitChild" lay-submit>&emsp;提交&emsp;</a>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

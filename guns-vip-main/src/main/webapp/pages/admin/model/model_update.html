@@ -1,0 +1,130 @@
+@layout("/common/_form.html",{js:["/assets/admin/model/model_update.js"]}){
+
+<form class="layui-form" id="modelForm" lay-filter="modelForm" style="margin-inside: 0px;">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">修改款式</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="id" value="${model.id}" type="hidden"/>
+                    <div class="layui-form-item">
+                        <div class="layui-inline layui-col-xs3">
+                            <label class="layui-form-label">款式编号</label>
+                            <div class="layui-input-inline">
+                                <input id="num" name="num" placeholder="请输入款式编号" value="${model.num}" disabled="disabled" type="text" class="layui-input" lay-verify=""/>
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-col-xs3">
+                            <label class="layui-form-label">画号</label>
+                            <div class="layui-input-inline">
+                                <input id="drawNum" name="drawNum" placeholder="请输入画号" value="${model.drawNum}" type="text" class="layui-input" lay-verify=""/>
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-col-xs3">
+                            <label class="layui-form-label">客户<span style="color: red;">*</span></label>
+                            <div class="layui-input-inline">
+                                <select name="customer" id="customer" lay-filter="customer" lay-search="">
+                                    @for(cu in customer){
+                                        @if(cu.num == model.customer){
+                                        <option value="${cu.num}" selected="">${cu.name}</option>
+                                        @}else{
+                                        <option value="${cu.num}" >${cu.name}</option>
+                                        @}
+                                    @}
+                                </select>
+                            </div>
+                            <button id="addNew" type="button" class="layui-btn">新增</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline layui-col-xs4">
+                            <label class="layui-form-label">款式名称<span style="color: red;">*</span></label>
+                            <div class="layui-input-inline">
+                                <input id="name" name="name" value="${model.name}" placeholder="请输入款式名称" type="text" class="layui-input" lay-verify="required" required/>
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-col-xs4">
+                            <label class="layui-form-label">款号</label>
+                            <div class="layui-input-inline">
+                                <input id="modelNum" name="modelNum" value="${model.modelNum}" placeholder="请输入款号" type="text" class="layui-input" lay-verify=""/>
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-col-xs4">
+                            <label class="layui-form-label">面料</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="HandoverCompany" id="HandoverCompany" class="layui-input" style="position:absolute;z-index:2;width:80%;" lay-verify="" value="${model.linling}" onkeyup="search()" autocomplete="off">
+                                <select name="hc_select" lay-filter="hc_select" lay-filter="hc_select" autocomplete="off" placeholder="面料信息" lay-verify="" class="layui-select" lay-search>
+                                    <option value="布料" selected="">布料</option>
+                                    <option value="真皮">真皮</option>
+                                    <option value="派克服面料">派克服面料</option>
+                                    <option value="羽绒服面料">羽绒服面料</option>
+                                    <option value="里布">里布</option>
+                                    <option value="织带">织带</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-col-xs4">
+                            <label class="layui-form-label">面料正反</label>
+                            <div class="layui-input-inline">
+                                <input id="linlingWhere" value="${model.linlingWhere}" name="linlingWhere" placeholder="请输入面料正反" type="text" class="layui-input" lay-verify=""/>
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-col-xs4">
+                            <label class="layui-form-label">面料来源</label>
+                            <div class="layui-input-inline">
+                                <select name="linlingFrom" lay-filter="linlingFrom">
+                                    <option value="1" ${model.linlingFrom == 1?'selected':''}>自家</option>
+                                    <option value="2" ${model.linlingFrom == 2?'selected':''}>客源</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-inline layui-col-xs4">
+                            <label class="layui-form-label">印花面</label>
+                            <div class="layui-input-inline">
+                                <select name="yinhuaWhere" lay-filter="yinhuaWhere">
+                                    <option value="正面" ${model.yinhuaWhere == '正面'?'selected':''}>正面</option>
+                                    <option value="反面" ${model.yinhuaWhere == '反面'?'selected':''}>反面</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <a type="button" class="layui-btn"id="orderDown">&emsp;下单&emsp;</a>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;修改&emsp;</button>
+        <a type="button"  class="layui-btn" id="btnModelNote">&emsp;款式日志&emsp;</a>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+</form>
+<div class="layui-form" style="padding-bottom: 75px;margin-top: -120px;">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>裁片数据</legend>
+    </fieldset>
+    <table class="layui-table" id="modelInfoTable" lay-filter="modelInfoTable" style="margin-top: 0px;"></table>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>配色表数据</legend>
+    </fieldset>
+    <table class="layui-table" id="modelColorTable" lay-filter="modelColorTable" style="margin-top: 0px;"></table>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>生产单数据</legend>
+    </fieldset>
+    <table class="layui-table" id="orderForModel" lay-filter="orderForModel" style="margin-top:25px;"></table>
+</div>
+    <script type="text/html" id="tool">
+    <div class="layui-btn-container">
+        <button class="layui-btn layui-btn-sm" lay-event="addNewModelInfo">新增裁片</button>
+    </div>
+</script>
+<script type="text/html" id="ColorTool">
+    <div class="layui-btn-container">
+        <button class="layui-btn layui-btn-sm" lay-event="addNewModelColor">新增配色表</button>
+    </div>
+</script>
+<script type="text/html" id="tableBarModel">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="edit">修改</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delete">删除</a>
+</script>
+@}

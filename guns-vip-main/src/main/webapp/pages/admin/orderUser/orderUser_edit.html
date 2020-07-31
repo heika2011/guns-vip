@@ -1,0 +1,45 @@
+@layout("/common/_form.html",{js:["/assets/admin/orderUser/orderUser_edit.js"]}){
+
+<form class="layui-form" id="orderUserForm" lay-filter="orderUserForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">基本信息</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="" type="hidden"/>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">用户id<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="userId" name="userId" placeholder="请输入用户id" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">订单编号<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="orderNum" name="orderNum" placeholder="请输入订单编号" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">产生时间<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="createdTime" name="createdTime" placeholder="请输入产生时间" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">打样或者大货<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="type" name="type" placeholder="请输入打样或者大货" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

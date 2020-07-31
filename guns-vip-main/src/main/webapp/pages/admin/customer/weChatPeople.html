@@ -1,0 +1,56 @@
+@layout("/common/_form.html",{js:["/assets/admin/customer/weChatPeople.js"]}){
+
+<form class="layui-form" id="customerForm" lay-filter="customerForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header" id="names">
+                选择微信用户:
+
+                @if(customer.wName != null ){
+                    @for(var i=0;i < strutil.split(customer.wName,',,,,').~size;i++){
+                    <a class="deleteForPeople" data="${strutil.split(customer.wName,',,,,')[i]}|||||${strutil.split(customer.openId,',')[i]}">${strutil.split(customer.wName,',,,,')[i]}<i class="layui-icon layui-icon-delete"></i></a>
+                    @}
+                @}
+            </div>
+            <input name="id" type="hidden" value="${id}">
+            <div class="layui-card-body">
+                <div class="layui-row layui-col-md12">
+                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入微信名称" class="layui-input">
+                </div>
+                <div class="layui-row layui-col-space15" id="cam" lay-filter="cam">
+                    @for(w in weUser){
+                    <a class="changeWe" data="${w.nickName}|||||${w.openId}">
+                        <div class="layui-col-md3">
+                            <div class="layui-card">
+                                <div class="layui-card-body">
+                                    <img src="${w.imageUrl}" style="width: 132px;height: 132px;"/><br/>微信名：${w.nickName}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    @}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+</form>
+<script type="text/html" id="searchText">
+    @for(w in weUser){
+    {{# if(isContains('微信名：${w.nickName}',d.val)){ }}
+        <a class="changeWe" data="${w.nickName}|||||${w.openId}">
+            <div class="layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <img src="${w.imageUrl}" style="width: 132px;height: 132px;"/><br/>微信名：${w.nickName}
+                    </div>
+                </div>
+            </div>
+        </a>
+    {{# } }}
+    @}
+</script>
+@}

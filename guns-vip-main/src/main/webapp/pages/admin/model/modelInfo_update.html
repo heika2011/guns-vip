@@ -1,0 +1,115 @@
+@layout("/common/_form.html",{js:["/assets/admin/model/modelInfo_update.js"]}){
+
+<form class="layui-form" id="modelInfoForm" lay-filter="modelInfoForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">修改裁片</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="id" value="${modelInfos.modelInfo.id}" type="hidden"/>
+                    <input name="num" value="${modelInfos.modelInfo.num}" type="hidden"/>
+                    @for(image in modelInfos.modelImage){
+                    <input name="${'t'+image.type}" value="${image.id}" type="hidden"/>
+                    @}
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片名称<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="names" name="names" value="${modelInfos.modelInfo.names}"  placeholder="请输入裁片名称" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline layui-col-xs3">
+                            <label class="layui-form-label">裁片图片</label>
+                            <button type="button" id="t1" class="layui-btn">查看图片</button>
+                        </div>
+                        <div class="layui-inline layui-col-xs-offset1" id="image">
+                            <img src="" style="width: 80px;height: 80px"/>
+                            <img src="" style="width: 80px;height: 80px"/>
+                            <img src="" style="width: 80px;height: 80px"/>
+                            <img src="" style="width: 80px;height: 80px"/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">颜色</label>
+                        <div class="layui-input-block">
+                            <input id="color" name="color" value="${modelInfos.modelInfo.color}" placeholder="请输入颜色" type="text" class="layui-input" lay-verify=""/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">颜色参考</label>
+                        <div class="layui-input-block">
+                            <input id="colorFrom" name="colorFrom" value="${modelInfos.modelInfo.colorFrom}" placeholder="请输入颜色参考" type="text" class="layui-input" lay-verify=""/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">面料</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="HandoverCompany" id="HandoverCompany" class="layui-input" style="position:absolute;z-index:2;width:80%;" lay-verify="" value="${modelInfos.modelInfo.linling}" onkeyup="search()" autocomplete="off">
+                            <select name="hc_select" lay-filter="hc_select" lay-filter="hc_select" autocomplete="off" placeholder="面料信息" lay-verify="" class="layui-select" lay-search>
+                                <option value="布料" selected="">布料</option>
+                                <option value="真皮">真皮</option>
+                                <option value="派克服面料">派克服面料</option>
+                                <option value="羽绒服面料">羽绒服面料</option>
+                                <option value="里布">里布</option>
+                                <option value="织带">织带</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">工艺</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="gongyi" id="gongyi" class="layui-input" style="position:absolute;z-index:2;width:80%;" lay-verify="" value="${modelInfos.modelInfo.craft}" onkeyup="search()" autocomplete="off">
+                            <select name="gongyi" lay-filter="gongyi" lay-filter="gongyi" autocomplete="off" placeholder="工艺信息" lay-verify="" class="layui-select" lay-search>
+                                <option value="丝印" selected="">丝印</option>
+                                <option value="数码">数码</option>
+                                <option value="激光">激光</option>
+                                <option value="移膜">移膜</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片大小</label>
+                        <div class="layui-input-block">
+                            <input id="sizes" name="sizes" value="${modelInfos.modelInfo.sizes}" placeholder="请输入裁片大小" type="text" class="layui-input" lay-verify=""/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片位置</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="weizhi" id="weizhi" class="layui-input" style="position:absolute;z-index:2;width:80%;" lay-verify="" value="${modelInfos.modelInfo.places}" onkeyup="search()" autocomplete="off">
+                            <select name="weizhi" lay-filter="weizhi" lay-filter="gongyi" autocomplete="off" placeholder="裁片位置" lay-verify="" class="layui-select" lay-search>
+                                <option value="按裁片定位" selected="">按裁片定位</option>
+                                <option value="按纸样">按纸样</option>
+                                <option value="按样衣">按样衣</option>
+                                <option value="按效果图">按效果图</option>
+                                <option value="按位置图">按位置图</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">有无拼缝</label>
+                        <div class="layui-input-block">
+                            <select name="piece" lay-filter="piece">
+                                <option value="2" ${modelInfos.modelInfo.piece == 1?'selected':''}>否</option>
+                                <option value="1" ${modelInfos.modelInfo.piece == 2?'selected':''}>有</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">备注</label>
+                        <div class="layui-input-block">
+                            <input id="note" name="note" value="${modelInfos.modelInfo.note}" placeholder="请输入备注" type="text" class="layui-input" lay-verify=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmitForInfo" lay-submit>&emsp;修改&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+@}

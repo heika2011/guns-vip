@@ -1,0 +1,85 @@
+@layout("/common/_form.html",{js:["/assets/admin/orders/orders_edit.js"]}){
+
+<form class="layui-form" id="ordersForm" lay-filter="ordersForm">
+    <div class="layui-form-item layui-tab layui-tab-card" lay-filter="demo">
+        <ul class="layui-tab-title">
+            <li class="layui-this">生产单信息</li>
+            <li>款式信息</li>
+            <li>数量表信息</li>
+        </ul>
+        <div class="layui-form-item layui-tab-content" style="height: 800px;">
+            <div class="layui-tab-item layui-show">
+                <input name="id" type="hidden"/>
+                <input name="modelId" type="hidden"/>
+                <input name="orderNum" type="hidden"/>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">数量</label>
+                    <div class="layui-input-block">
+                        <input id="allcount" name="allcount" placeholder="请输入数量" type="text" class="layui-input" lay-verify=""/>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">单位</label>
+                    <div class="layui-input-block">
+                        <select name="units" lay-filter="units">
+                            <option value="件" selected="">件</option>
+                            <option value="SF">SF</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">备注</label>
+                    <div class="layui-input-block">
+                        <input id="note" name="note" placeholder="请输入备注" type="text" class="layui-input" lay-verify=""/>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-md12">
+                    <label class="layui-form-label">交货时间</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="overTime" id="overTime" placeholder="yyyy-MM-dd HH:mm:ss" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item">
+
+            </div>
+
+
+            <div class="layui-tab-item">
+                <table class="layui-table" id="table" lay-filter="table">
+                    <a class="layui-btn layui-btn-xs add">添加</a>
+                    <thead>
+                    <tr>
+                        <td>颜色</td>
+                        <td>订单数量</td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @for(num in orderNum){
+                    <tr>
+                        <td><input type="text" value="${num.color}" disabled="disabled"  class="layui-input" name="color"></td>
+                        <td><input type="number" value="${num.sum}"  class="layui-input" name="colorNum"></td>
+                        <td>
+                            <a class="layui-btn layui-btn-xs save">保存</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-xs del">删除</a>
+                        </td>
+                    </tr>
+                    @}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;修改&emsp;</button>
+       <!-- <a type="button" class="layui-btn" id="sendZR" lay-filter="sendZR">&emsp;转让&emsp;</a>-->
+        <a type="button" class="layui-btn" id="sendBJ" lay-filter="sendBJ">&emsp;请求报价&emsp;</a>
+        <a type="button" class="layui-btn" id="sendCD" lay-filter="sendCD">&emsp;催单&emsp;</a>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

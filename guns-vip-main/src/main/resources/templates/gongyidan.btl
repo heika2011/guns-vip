@@ -1,0 +1,3426 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?mso-application progid="Word.Document"?>
+<w:wordDocument xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml" xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wsp="http://schemas.microsoft.com/office/word/2003/wordml/sp2" xmlns:sl="http://schemas.microsoft.com/schemaLibrary/2003/core" w:macrosPresent="no" w:embeddedObjPresent="no" w:ocxPresent="no" xml:space="preserve">
+<w:ignoreSubtree w:val="http://schemas.microsoft.com/office/word/2003/wordml/sp2" />
+    <o:DocumentProperties>
+    <o:Author>xin xie</o:Author>
+        <o:LastAuthor>xin xie</o:LastAuthor>
+        <o:Revision>2</o:Revision>
+        <o:TotalTime>3</o:TotalTime>
+        <o:Created>2020-04-16T13:14:00Z</o:Created>
+        <o:LastSaved>2020-04-16T13:14:00Z</o:LastSaved>
+        <o:Pages>1</o:Pages>
+        <o:Words>134</o:Words>
+        <o:Characters>766</o:Characters>
+        <o:Lines>6</o:Lines>
+        <o:Paragraphs>1</o:Paragraphs>
+        <o:CharactersWithSpaces>899</o:CharactersWithSpaces>
+        <o:Version>16</o:Version>
+</o:DocumentProperties>
+    <w:fonts>
+    <w:defaultFonts w:ascii="Times New Roman" w:fareast="等线" w:h-ansi="Times New Roman" w:cs="Times New Roman" />
+        <w:font w:name="Times New Roman">
+        <w:panose-1 w:val="02020603050405020304" />
+            <w:charset w:val="00" />
+            <w:family w:val="Roman" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="E0002EFF" w:usb-1="C000785B" w:usb-2="00000009" w:usb-3="00000000" w:csb-0="000001FF" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="宋体">
+        <w:altName w:val="SimSun" />
+            <w:panose-1 w:val="02010600030101010101" />
+            <w:charset w:val="86" />
+            <w:family w:val="auto" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="Cambria Math">
+        <w:panose-1 w:val="02040503050406030204" />
+            <w:charset w:val="00" />
+            <w:family w:val="Roman" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="E00006FF" w:usb-1="420024FF" w:usb-2="02000000" w:usb-3="00000000" w:csb-0="0000019F" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="等线">
+        <w:altName w:val="DengXian" />
+            <w:panose-1 w:val="02010600030101010101" />
+            <w:charset w:val="86" />
+            <w:family w:val="auto" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="A00002BF" w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="0004000F" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="微软雅黑">
+        <w:panose-1 w:val="020B0503020204020204" />
+            <w:charset w:val="86" />
+            <w:family w:val="Swiss" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="80000287" w:usb-1="2ACF3C50" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="0004001F" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="楷体">
+        <w:panose-1 w:val="02010609060101010101" />
+            <w:charset w:val="86" />
+            <w:family w:val="Modern" />
+            <w:pitch w:val="fixed" />
+            <w:sig w:usb-0="800002BF" w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="@等线">
+        <w:panose-1 w:val="02010600030101010101" />
+            <w:charset w:val="86" />
+            <w:family w:val="auto" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="A00002BF" w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="0004000F" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="@宋体">
+        <w:panose-1 w:val="02010600030101010101" />
+            <w:charset w:val="86" />
+            <w:family w:val="auto" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="00000003" w:usb-1="288F0000" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="@微软雅黑">
+        <w:charset w:val="86" />
+            <w:family w:val="Swiss" />
+            <w:pitch w:val="variable" />
+            <w:sig w:usb-0="80000287" w:usb-1="2ACF3C50" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="0004001F" w:csb-1="00000000" />
+    </w:font>
+        <w:font w:name="@楷体">
+        <w:charset w:val="86" />
+            <w:family w:val="Modern" />
+            <w:pitch w:val="fixed" />
+            <w:sig w:usb-0="800002BF" w:usb-1="38CF7CFA" w:usb-2="00000016" w:usb-3="00000000" w:csb-0="00040001" w:csb-1="00000000" />
+    </w:font>
+</w:fonts>
+    <w:styles>
+    <w:versionOfBuiltInStylenames w:val="7" />
+        <w:latentStyles w:defLockedState="off" w:latentStyleCount="376">
+        <w:lsdException w:name="Normal" />
+            <w:lsdException w:name="heading 1" />
+            <w:lsdException w:name="heading 2" />
+            <w:lsdException w:name="heading 3" />
+            <w:lsdException w:name="heading 4" />
+            <w:lsdException w:name="heading 5" />
+            <w:lsdException w:name="heading 6" />
+            <w:lsdException w:name="heading 7" />
+            <w:lsdException w:name="heading 8" />
+            <w:lsdException w:name="heading 9" />
+            <w:lsdException w:name="caption" />
+            <w:lsdException w:name="Title" />
+            <w:lsdException w:name="Subtitle" />
+            <w:lsdException w:name="Strong" />
+            <w:lsdException w:name="Emphasis" />
+            <w:lsdException w:name="Placeholder Text" />
+            <w:lsdException w:name="No Spacing" />
+            <w:lsdException w:name="Light Shading" />
+            <w:lsdException w:name="Light List" />
+            <w:lsdException w:name="Light Grid" />
+            <w:lsdException w:name="Medium Shading 1" />
+            <w:lsdException w:name="Medium Shading 2" />
+            <w:lsdException w:name="Medium List 1" />
+            <w:lsdException w:name="Medium List 2" />
+            <w:lsdException w:name="Medium Grid 1" />
+            <w:lsdException w:name="Medium Grid 2" />
+            <w:lsdException w:name="Medium Grid 3" />
+            <w:lsdException w:name="Dark List" />
+            <w:lsdException w:name="Colorful Shading" />
+            <w:lsdException w:name="Colorful List" />
+            <w:lsdException w:name="Colorful Grid" />
+            <w:lsdException w:name="Light Shading Accent 1" />
+            <w:lsdException w:name="Light List Accent 1" />
+            <w:lsdException w:name="Light Grid Accent 1" />
+            <w:lsdException w:name="Medium Shading 1 Accent 1" />
+            <w:lsdException w:name="Medium Shading 2 Accent 1" />
+            <w:lsdException w:name="Medium List 1 Accent 1" />
+            <w:lsdException w:name="Revision" />
+            <w:lsdException w:name="List Paragraph" />
+            <w:lsdException w:name="Quote" />
+            <w:lsdException w:name="Intense Quote" />
+            <w:lsdException w:name="Medium List 2 Accent 1" />
+            <w:lsdException w:name="Medium Grid 1 Accent 1" />
+            <w:lsdException w:name="Medium Grid 2 Accent 1" />
+            <w:lsdException w:name="Medium Grid 3 Accent 1" />
+            <w:lsdException w:name="Dark List Accent 1" />
+            <w:lsdException w:name="Colorful Shading Accent 1" />
+            <w:lsdException w:name="Colorful List Accent 1" />
+            <w:lsdException w:name="Colorful Grid Accent 1" />
+            <w:lsdException w:name="Light Shading Accent 2" />
+            <w:lsdException w:name="Light List Accent 2" />
+            <w:lsdException w:name="Light Grid Accent 2" />
+            <w:lsdException w:name="Medium Shading 1 Accent 2" />
+            <w:lsdException w:name="Medium Shading 2 Accent 2" />
+            <w:lsdException w:name="Medium List 1 Accent 2" />
+            <w:lsdException w:name="Medium List 2 Accent 2" />
+            <w:lsdException w:name="Medium Grid 1 Accent 2" />
+            <w:lsdException w:name="Medium Grid 2 Accent 2" />
+            <w:lsdException w:name="Medium Grid 3 Accent 2" />
+            <w:lsdException w:name="Dark List Accent 2" />
+            <w:lsdException w:name="Colorful Shading Accent 2" />
+            <w:lsdException w:name="Colorful List Accent 2" />
+            <w:lsdException w:name="Colorful Grid Accent 2" />
+            <w:lsdException w:name="Light Shading Accent 3" />
+            <w:lsdException w:name="Light List Accent 3" />
+            <w:lsdException w:name="Light Grid Accent 3" />
+            <w:lsdException w:name="Medium Shading 1 Accent 3" />
+            <w:lsdException w:name="Medium Shading 2 Accent 3" />
+            <w:lsdException w:name="Medium List 1 Accent 3" />
+            <w:lsdException w:name="Medium List 2 Accent 3" />
+            <w:lsdException w:name="Medium Grid 1 Accent 3" />
+            <w:lsdException w:name="Medium Grid 2 Accent 3" />
+            <w:lsdException w:name="Medium Grid 3 Accent 3" />
+            <w:lsdException w:name="Dark List Accent 3" />
+            <w:lsdException w:name="Colorful Shading Accent 3" />
+            <w:lsdException w:name="Colorful List Accent 3" />
+            <w:lsdException w:name="Colorful Grid Accent 3" />
+            <w:lsdException w:name="Light Shading Accent 4" />
+            <w:lsdException w:name="Light List Accent 4" />
+            <w:lsdException w:name="Light Grid Accent 4" />
+            <w:lsdException w:name="Medium Shading 1 Accent 4" />
+            <w:lsdException w:name="Medium Shading 2 Accent 4" />
+            <w:lsdException w:name="Medium List 1 Accent 4" />
+            <w:lsdException w:name="Medium List 2 Accent 4" />
+            <w:lsdException w:name="Medium Grid 1 Accent 4" />
+            <w:lsdException w:name="Medium Grid 2 Accent 4" />
+            <w:lsdException w:name="Medium Grid 3 Accent 4" />
+            <w:lsdException w:name="Dark List Accent 4" />
+            <w:lsdException w:name="Colorful Shading Accent 4" />
+            <w:lsdException w:name="Colorful List Accent 4" />
+            <w:lsdException w:name="Colorful Grid Accent 4" />
+            <w:lsdException w:name="Light Shading Accent 5" />
+            <w:lsdException w:name="Light List Accent 5" />
+            <w:lsdException w:name="Light Grid Accent 5" />
+            <w:lsdException w:name="Medium Shading 1 Accent 5" />
+            <w:lsdException w:name="Medium Shading 2 Accent 5" />
+            <w:lsdException w:name="Medium List 1 Accent 5" />
+            <w:lsdException w:name="Medium List 2 Accent 5" />
+            <w:lsdException w:name="Medium Grid 1 Accent 5" />
+            <w:lsdException w:name="Medium Grid 2 Accent 5" />
+            <w:lsdException w:name="Medium Grid 3 Accent 5" />
+            <w:lsdException w:name="Dark List Accent 5" />
+            <w:lsdException w:name="Colorful Shading Accent 5" />
+            <w:lsdException w:name="Colorful List Accent 5" />
+            <w:lsdException w:name="Colorful Grid Accent 5" />
+            <w:lsdException w:name="Light Shading Accent 6" />
+            <w:lsdException w:name="Light List Accent 6" />
+            <w:lsdException w:name="Light Grid Accent 6" />
+            <w:lsdException w:name="Medium Shading 1 Accent 6" />
+            <w:lsdException w:name="Medium Shading 2 Accent 6" />
+            <w:lsdException w:name="Medium List 1 Accent 6" />
+            <w:lsdException w:name="Medium List 2 Accent 6" />
+            <w:lsdException w:name="Medium Grid 1 Accent 6" />
+            <w:lsdException w:name="Medium Grid 2 Accent 6" />
+            <w:lsdException w:name="Medium Grid 3 Accent 6" />
+            <w:lsdException w:name="Dark List Accent 6" />
+            <w:lsdException w:name="Colorful Shading Accent 6" />
+            <w:lsdException w:name="Colorful List Accent 6" />
+            <w:lsdException w:name="Colorful Grid Accent 6" />
+            <w:lsdException w:name="Subtle Emphasis" />
+            <w:lsdException w:name="Intense Emphasis" />
+            <w:lsdException w:name="Subtle Reference" />
+            <w:lsdException w:name="Intense Reference" />
+            <w:lsdException w:name="Book Title" />
+            <w:lsdException w:name="Bibliography" />
+            <w:lsdException w:name="TOC Heading" />
+            <w:lsdException w:name="Plain Table 1" />
+            <w:lsdException w:name="Plain Table 2" />
+            <w:lsdException w:name="Plain Table 3" />
+            <w:lsdException w:name="Plain Table 4" />
+            <w:lsdException w:name="Plain Table 5" />
+            <w:lsdException w:name="Grid Table Light" />
+            <w:lsdException w:name="Grid Table 1 Light" />
+            <w:lsdException w:name="Grid Table 2" />
+            <w:lsdException w:name="Grid Table 3" />
+            <w:lsdException w:name="Grid Table 4" />
+            <w:lsdException w:name="Grid Table 5 Dark" />
+            <w:lsdException w:name="Grid Table 6 Colorful" />
+            <w:lsdException w:name="Grid Table 7 Colorful" />
+            <w:lsdException w:name="Grid Table 1 Light Accent 1" />
+            <w:lsdException w:name="Grid Table 2 Accent 1" />
+            <w:lsdException w:name="Grid Table 3 Accent 1" />
+            <w:lsdException w:name="Grid Table 4 Accent 1" />
+            <w:lsdException w:name="Grid Table 5 Dark Accent 1" />
+            <w:lsdException w:name="Grid Table 6 Colorful Accent 1" />
+            <w:lsdException w:name="Grid Table 7 Colorful Accent 1" />
+            <w:lsdException w:name="Grid Table 1 Light Accent 2" />
+            <w:lsdException w:name="Grid Table 2 Accent 2" />
+            <w:lsdException w:name="Grid Table 3 Accent 2" />
+            <w:lsdException w:name="Grid Table 4 Accent 2" />
+            <w:lsdException w:name="Grid Table 5 Dark Accent 2" />
+            <w:lsdException w:name="Grid Table 6 Colorful Accent 2" />
+            <w:lsdException w:name="Grid Table 7 Colorful Accent 2" />
+            <w:lsdException w:name="Grid Table 1 Light Accent 3" />
+            <w:lsdException w:name="Grid Table 2 Accent 3" />
+            <w:lsdException w:name="Grid Table 3 Accent 3" />
+            <w:lsdException w:name="Grid Table 4 Accent 3" />
+            <w:lsdException w:name="Grid Table 5 Dark Accent 3" />
+            <w:lsdException w:name="Grid Table 6 Colorful Accent 3" />
+            <w:lsdException w:name="Grid Table 7 Colorful Accent 3" />
+            <w:lsdException w:name="Grid Table 1 Light Accent 4" />
+            <w:lsdException w:name="Grid Table 2 Accent 4" />
+            <w:lsdException w:name="Grid Table 3 Accent 4" />
+            <w:lsdException w:name="Grid Table 4 Accent 4" />
+            <w:lsdException w:name="Grid Table 5 Dark Accent 4" />
+            <w:lsdException w:name="Grid Table 6 Colorful Accent 4" />
+            <w:lsdException w:name="Grid Table 7 Colorful Accent 4" />
+            <w:lsdException w:name="Grid Table 1 Light Accent 5" />
+            <w:lsdException w:name="Grid Table 2 Accent 5" />
+            <w:lsdException w:name="Grid Table 3 Accent 5" />
+            <w:lsdException w:name="Grid Table 4 Accent 5" />
+            <w:lsdException w:name="Grid Table 5 Dark Accent 5" />
+            <w:lsdException w:name="Grid Table 6 Colorful Accent 5" />
+            <w:lsdException w:name="Grid Table 7 Colorful Accent 5" />
+            <w:lsdException w:name="Grid Table 1 Light Accent 6" />
+            <w:lsdException w:name="Grid Table 2 Accent 6" />
+            <w:lsdException w:name="Grid Table 3 Accent 6" />
+            <w:lsdException w:name="Grid Table 4 Accent 6" />
+            <w:lsdException w:name="Grid Table 5 Dark Accent 6" />
+            <w:lsdException w:name="Grid Table 6 Colorful Accent 6" />
+            <w:lsdException w:name="Grid Table 7 Colorful Accent 6" />
+            <w:lsdException w:name="List Table 1 Light" />
+            <w:lsdException w:name="List Table 2" />
+            <w:lsdException w:name="List Table 3" />
+            <w:lsdException w:name="List Table 4" />
+            <w:lsdException w:name="List Table 5 Dark" />
+            <w:lsdException w:name="List Table 6 Colorful" />
+            <w:lsdException w:name="List Table 7 Colorful" />
+            <w:lsdException w:name="List Table 1 Light Accent 1" />
+            <w:lsdException w:name="List Table 2 Accent 1" />
+            <w:lsdException w:name="List Table 3 Accent 1" />
+            <w:lsdException w:name="List Table 4 Accent 1" />
+            <w:lsdException w:name="List Table 5 Dark Accent 1" />
+            <w:lsdException w:name="List Table 6 Colorful Accent 1" />
+            <w:lsdException w:name="List Table 7 Colorful Accent 1" />
+            <w:lsdException w:name="List Table 1 Light Accent 2" />
+            <w:lsdException w:name="List Table 2 Accent 2" />
+            <w:lsdException w:name="List Table 3 Accent 2" />
+            <w:lsdException w:name="List Table 4 Accent 2" />
+            <w:lsdException w:name="List Table 5 Dark Accent 2" />
+            <w:lsdException w:name="List Table 6 Colorful Accent 2" />
+            <w:lsdException w:name="List Table 7 Colorful Accent 2" />
+            <w:lsdException w:name="List Table 1 Light Accent 3" />
+            <w:lsdException w:name="List Table 2 Accent 3" />
+            <w:lsdException w:name="List Table 3 Accent 3" />
+            <w:lsdException w:name="List Table 4 Accent 3" />
+            <w:lsdException w:name="List Table 5 Dark Accent 3" />
+            <w:lsdException w:name="List Table 6 Colorful Accent 3" />
+            <w:lsdException w:name="List Table 7 Colorful Accent 3" />
+            <w:lsdException w:name="List Table 1 Light Accent 4" />
+            <w:lsdException w:name="List Table 2 Accent 4" />
+            <w:lsdException w:name="List Table 3 Accent 4" />
+            <w:lsdException w:name="List Table 4 Accent 4" />
+            <w:lsdException w:name="List Table 5 Dark Accent 4" />
+            <w:lsdException w:name="List Table 6 Colorful Accent 4" />
+            <w:lsdException w:name="List Table 7 Colorful Accent 4" />
+            <w:lsdException w:name="List Table 1 Light Accent 5" />
+            <w:lsdException w:name="List Table 2 Accent 5" />
+            <w:lsdException w:name="List Table 3 Accent 5" />
+            <w:lsdException w:name="List Table 4 Accent 5" />
+            <w:lsdException w:name="List Table 5 Dark Accent 5" />
+            <w:lsdException w:name="List Table 6 Colorful Accent 5" />
+            <w:lsdException w:name="List Table 7 Colorful Accent 5" />
+            <w:lsdException w:name="List Table 1 Light Accent 6" />
+            <w:lsdException w:name="List Table 2 Accent 6" />
+            <w:lsdException w:name="List Table 3 Accent 6" />
+            <w:lsdException w:name="List Table 4 Accent 6" />
+            <w:lsdException w:name="List Table 5 Dark Accent 6" />
+            <w:lsdException w:name="List Table 6 Colorful Accent 6" />
+            <w:lsdException w:name="List Table 7 Colorful Accent 6" />
+            <w:lsdException w:name="Mention" />
+            <w:lsdException w:name="Smart Hyperlink" />
+            <w:lsdException w:name="Hashtag" />
+            <w:lsdException w:name="Unresolved Mention" />
+            <w:lsdException w:name="Smart Link" />
+    </w:latentStyles>
+        <w:style w:type="paragraph" w:default="on" w:styleId="a">
+        <w:name w:val="Normal" />
+            <wx:uiName wx:val="正文" />
+            <w:rPr>
+            <wx:font wx:val="Times New Roman" />
+                <w:sz w:val="24" />
+                <w:sz-cs w:val="24" />
+                <w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+        </w:rPr>
+    </w:style>
+        <w:style w:type="character" w:default="on" w:styleId="a0">
+        <w:name w:val="Default Paragraph Font" />
+            <wx:uiName wx:val="默认段落字体" />
+    </w:style>
+        <w:style w:type="table" w:default="on" w:styleId="a1">
+        <w:name w:val="Normal Table" />
+            <wx:uiName wx:val="普通表格" />
+            <w:rPr>
+            <wx:font wx:val="Times New Roman" />
+                <w:lang w:val="EN-US" w:fareast="ZH-CN" w:bidi="AR-SA" />
+        </w:rPr>
+            <w:tblPr>
+            <w:tblInd w:w="0" w:type="dxa" />
+                <w:tblCellMar>
+                <w:top w:w="0" w:type="dxa" />
+                    <w:top w:w="0" w:type="dxa" />
+                    <w:left w:w="108" w:type="dxa" />
+                    <w:bottom w:w="0" w:type="dxa" />
+                    <w:right w:w="108" w:type="dxa" />
+            </w:tblCellMar>
+        </w:tblPr>
+    </w:style>
+        <w:style w:type="list" w:default="on" w:styleId="a2">
+        <w:name w:val="No List" />
+            <wx:uiName wx:val="无列表" />
+    </w:style>
+</w:styles>
+    <w:divs>
+    <w:div w:id="2100984871">
+        <w:bodyDiv w:val="on" />
+        <w:marLeft w:val="0" />
+        <w:marRight w:val="0" />
+        <w:marTop w:val="0" />
+        <w:marBottom w:val="0" />
+        <w:divBdr>
+            <w:top w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto" />
+            <w:left w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto" />
+            <w:bottom w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto" />
+            <w:right w:val="none" w:sz="0" wx:bdrwidth="0" w:space="0" w:color="auto" />
+        </w:divBdr>
+    </w:div>
+</w:divs>
+    <w:shapeDefaults>
+    <o:shapedefaults v:ext="edit" spidmax="1026" />
+        <o:shapelayout v:ext="edit">
+        <o:idmap v:ext="edit" data="1" />
+    </o:shapelayout>
+</w:shapeDefaults>
+    <w:docPr>
+    <w:view w:val="print" />
+        <w:zoom w:percent="100" />
+        <w:proofState w:grammar="clean" />
+        <w:stylePaneFormatFilter w:val="3F01" />
+        <w:defaultTabStop w:val="720" />
+        <w:characterSpacingControl w:val="DontCompress" />
+        <w:targetScreenSz w:val="800x600" />
+        <w:validateAgainstSchema />
+        <w:saveInvalidXML w:val="off" />
+        <w:ignoreMixedContent w:val="off" />
+        <w:alwaysShowPlaceholderText w:val="off" />
+        <w:compat>
+        <w:breakWrappedTables />
+            <w:snapToGridInCell />
+            <w:wrapTextWithPunct />
+            <w:useAsianBreakRules />
+            <w:useWord2002TableStyleRules />
+            <w:useFELayout />
+    </w:compat>
+        <wsp:rsids>
+        <wsp:rsidRoot wsp:val="00A77B3E" />
+            <wsp:rsid wsp:val="003C546B" />
+            <wsp:rsid wsp:val="00646A34" />
+            <wsp:rsid wsp:val="00707003" />
+            <wsp:rsid wsp:val="00781515" />
+            <wsp:rsid wsp:val="00B5254A" />
+            <wsp:rsid wsp:val="00B96FA2" />
+    </wsp:rsids>
+</w:docPr>
+    <w:body>
+    <wx:sect>
+        <w:p wsp:rsidR="00781515" wsp:rsidRDefault="005930E1">
+            <w:r>
+                <w:rPr>
+                    <w:noProof />
+                </w:rPr>
+                <w:pict>
+                    <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+                        <v:stroke joinstyle="miter" />
+                        <v:formulas>
+                            <v:f eqn="if lineDrawn pixelLineWidth 0" />
+                            <v:f eqn="sum @0 1 0" />
+                            <v:f eqn="sum 0 0 @1" />
+                            <v:f eqn="prod @2 1 2" />
+                            <v:f eqn="prod @3 21600 pixelWidth" />
+                            <v:f eqn="prod @3 21600 pixelHeight" />
+                            <v:f eqn="sum @0 0 1" />
+                            <v:f eqn="prod @6 1 2" />
+                            <v:f eqn="prod @7 21600 pixelWidth" />
+                            <v:f eqn="sum @8 21600 0" />
+                            <v:f eqn="prod @7 21600 pixelHeight" />
+                            <v:f eqn="sum @10 21600 0" />
+                        </v:formulas>
+                        <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+                        <o:lock v:ext="edit" aspectratio="t" />
+                    </v:shapetype>
+                    <w:binData w:name="wordml://02000001.jpg" xml:space="preserve">
+${images}
+</w:binData>
+                    <v:shape id="图片 5" o:spid="_x0000_s1030" type="#_x0000_t75" style="position:absolute;margin-left:6.9pt;margin-top:-10.05pt;width:70pt;height:70pt;z-index:5;visibility:visible;mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;mso-position-vertical:absolute;mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin">
+                        <v:imagedata src="wordml://02000001.jpg" o:title="" />
+                        <w10:wrap anchorx="margin" />
+                    </v:shape>
+                </w:pict>
+            </w:r>
+        </w:p>
+        <w:tbl>
+            <w:tblPr>
+                <w:tblW w:w="5000" w:type="pct" />
+                <w:tblBorders>
+                    <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                    <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                    <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                    <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                    <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                    <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                </w:tblBorders>
+                <w:tblLook w:val="04A0" />
+            </w:tblPr>
+            <w:tblGrid>
+                <w:gridCol w:w="1748" />
+                <w:gridCol w:w="1591" />
+                <w:gridCol w:w="809" />
+                <w:gridCol w:w="1347" />
+                <w:gridCol w:w="1349" />
+                <w:gridCol w:w="1077" />
+                <w:gridCol w:w="1327" />
+                <w:gridCol w:w="1740" />
+            </w:tblGrid>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="540" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="0" w:type="auto" />
+                        <w:gridSpan w:val="8" />
+                        <w:tcBorders>
+                            <w:top w:val="nil" />
+                            <w:left w:val="nil" />
+                            <w:bottom w:val="nil" />
+                            <w:right w:val="nil" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="44" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="44" />
+                            </w:rPr>
+                            <w:t>生产单（${orderType}）</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <%
+            for(var i=0;i < order.restAllModel.modelInfo.~size;i++){
+            %>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="495" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge w:val="restart" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00646A34">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+
+                            <w:pict>
+                                <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+                                    <v:stroke joinstyle="miter" />
+                                    <v:formulas>
+                                        <v:f eqn="if lineDrawn pixelLineWidth 0" />
+                                        <v:f eqn="sum @0 1 0" />
+                                        <v:f eqn="sum 0 0 @1" />
+                                        <v:f eqn="prod @2 1 2" />
+                                        <v:f eqn="prod @3 21600 pixelWidth" />
+                                        <v:f eqn="prod @3 21600 pixelHeight" />
+                                        <v:f eqn="sum @0 0 1" />
+                                        <v:f eqn="prod @6 1 2" />
+                                        <v:f eqn="prod @7 21600 pixelWidth" />
+                                        <v:f eqn="sum @8 21600 0" />
+                                        <v:f eqn="prod @7 21600 pixelHeight" />
+                                        <v:f eqn="sum @10 21600 0" />
+                                    </v:formulas>
+                                    <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+                                    <o:lock v:ext="edit" aspectratio="t" />
+                                </v:shapetype>
+                                <w:binData w:name="wordml://0300000${i}.png" xml:space="preserve">${order.restAllModel.modelInfo[i].modelImage.~size>0?order.restAllModel.modelInfo[i].modelImage[0].url:''}
+</w:binData>
+
+                                <v:shape id="_x0000_i1025" type="#_x0000_t75" style="width:214.5pt;height:202.5pt">
+                                    <v:imagedata src="wordml://0300000${i}.png" o:title="支付宝" />
+                                </v:shape>
+                            </w:pict>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:proofErr w:type="gramStart" />
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>裁片名称</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.modelInfo[i].modelInfo.names}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="495" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>颜色</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.modelInfo[i].modelInfo.color}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="495" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>工艺</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.modelInfo[i].modelInfo.craft}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="495" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>大小</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.modelInfo[i].modelInfo.sizes}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="495" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>位置</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.modelInfo[i].modelInfo.places}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="495" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>面料</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.modelInfo[i].modelInfo.linling}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="495" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>有无拼缝</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>
+                                <%
+                                if(order.restAllModel.modelInfo[i].modelInfo.piece == 1){
+                                    print("有");
+                                }else{
+                                    print("无");
+                                }
+                                %>
+                            </w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="690" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2500" w:type="pct" />
+                        <w:gridSpan w:val="4" />
+                        <w:vmerge />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                        </w:pPr>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="614" w:type="pct" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>备注</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1886" w:type="pct" />
+                        <w:gridSpan w:val="3" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="20" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" w:hint="fareast" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="20" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.modelInfo[i].modelInfo.note}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515" wsp:rsidP="003C546B">
+            <w:pPr>
+                <w:rPr>
+                    <w:rFonts w:hint="fareast" />
+                </w:rPr>
+            </w:pPr>
+            </w:p>
+            <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515" wsp:rsidP="003C546B">
+            <w:pPr>
+                <w:rPr>
+                    <w:rFonts w:hint="fareast" />
+                </w:rPr>
+            </w:pPr>
+            </w:p>
+            <%if((i+1)%3==0){%>
+            <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515" wsp:rsidP="003C546B">
+            <w:pPr>
+                <w:rPr>
+                    <w:rFonts w:hint="fareast" />
+                </w:rPr>
+            </w:pPr>
+            </w:p>
+            <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515" wsp:rsidP="003C546B">
+            <w:pPr>
+                <w:rPr>
+                    <w:rFonts w:hint="fareast" />
+                </w:rPr>
+            </w:pPr>
+            </w:p>
+            <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515" wsp:rsidP="003C546B">
+            <w:pPr>
+                <w:rPr>
+                    <w:rFonts w:hint="fareast" />
+                </w:rPr>
+            </w:pPr>
+            </w:p>
+            <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515" wsp:rsidP="003C546B">
+            <w:pPr>
+                <w:rPr>
+                    <w:rFonts w:hint="fareast" />
+                </w:rPr>
+            </w:pPr>
+            </w:p>
+            <w:p wsp:rsidR="00781515" wsp:rsidRDefault="005930E1">
+            <w:r>
+                <w:rPr>
+                    <w:noProof />
+                </w:rPr>
+                <w:pict>
+                    <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+                        <v:stroke joinstyle="miter" />
+                        <v:formulas>
+                            <v:f eqn="if lineDrawn pixelLineWidth 0" />
+                            <v:f eqn="sum @0 1 0" />
+                            <v:f eqn="sum 0 0 @1" />
+                            <v:f eqn="prod @2 1 2" />
+                            <v:f eqn="prod @3 21600 pixelWidth" />
+                            <v:f eqn="prod @3 21600 pixelHeight" />
+                            <v:f eqn="sum @0 0 1" />
+                            <v:f eqn="prod @6 1 2" />
+                            <v:f eqn="prod @7 21600 pixelWidth" />
+                            <v:f eqn="sum @8 21600 0" />
+                            <v:f eqn="prod @7 21600 pixelHeight" />
+                            <v:f eqn="sum @10 21600 0" />
+                        </v:formulas>
+                        <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+                        <o:lock v:ext="edit" aspectratio="t" />
+                    </v:shapetype>
+                    <w:binData w:name="wordml://02000001.jpg" xml:space="preserve">
+${images}
+</w:binData>
+                    <v:shape id="图片 5" o:spid="_x0000_s1030" type="#_x0000_t75" style="position:absolute;margin-left:6.9pt;margin-top:-10.05pt;width:70pt;height:70pt;z-index:5;visibility:visible;mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;mso-position-vertical:absolute;mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;mso-width-relative:margin;mso-height-relative:margin">
+                        <v:imagedata src="wordml://02000001.jpg" o:title="" />
+                        <w10:wrap anchorx="margin" />
+                    </v:shape>
+                </w:pict>
+            </w:r>
+        </w:p>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="540" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="0" w:type="auto" />
+                        <w:gridSpan w:val="8" />
+                        <w:tcBorders>
+                            <w:top w:val="nil" />
+                            <w:left w:val="nil" />
+                            <w:bottom w:val="nil" />
+                            <w:right w:val="nil" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="44" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="44" />
+                            </w:rPr>
+                            <w:t>生产单（海宁奇艺印花）</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <%}%>
+            <%}%>
+            <w:tr wsp:rsidR="00544919" wsp:rsidTr="00544919">
+                <w:trPr>
+                    <w:trHeight w:val="600" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1746" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00544919" wsp:rsidRDefault="00544919">
+                        <w:pPr>
+                            <w:jc w:val="center" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>订单备注</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="4741" w:type="dxa" />
+                        <w:gridSpan w:val="4" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00544919" wsp:rsidRDefault="00544919">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.note}</w:t>
+                        </w:r>
+                        <w:proofErr w:type="gramEnd" />
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1435" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00544919" wsp:rsidRDefault="00544919" wsp:rsidP="00544919">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                            <w:t>生产单编号</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3066" w:type="dxa" />
+                        <w:gridSpan w:val="2" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00544919" wsp:rsidRDefault="00544919" wsp:rsidP="00544919">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r wsp:rsidRPr="00544919">
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.orderNum}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="003C546B" wsp:rsidTr="00544919">
+                <w:trPr>
+                    <w:trHeight w:val="420" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1746" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>面料</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1591" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.model.linling}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="809" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>正面</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2341" w:type="dxa" />
+                        <w:gridSpan w:val="2" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.model.linlingWhere}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1435" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>印花面</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3066" w:type="dxa" />
+                        <w:gridSpan w:val="2" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.model.yinhuaWhere}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="003C546B" wsp:rsidTr="00544919">
+                <w:trPr>
+                    <w:trHeight w:val="420" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1746" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                            <w:t>款式编号</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1591" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="20" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.model.num}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="809" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>名称</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2341" w:type="dxa" />
+                        <w:gridSpan w:val="2" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.model.name}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1435" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:proofErr w:type="gramStart" />
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>款号</w:t>
+                        </w:r>
+                        <w:proofErr w:type="gramEnd" />
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="3066" w:type="dxa" />
+                        <w:gridSpan w:val="2" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.model.modelNum}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00544919">
+                <w:trPr>
+                    <w:trHeight w:val="420" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1746" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:proofErr w:type="gramStart" />
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>画号</w:t>
+                        </w:r>
+                        <w:proofErr w:type="gramEnd" />
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1591" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restAllModel.model.drawNum}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="809" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>数量</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1345" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.allcount}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="996" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>单位</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1435" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B5254A">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.units}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1326" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                            <w:t>客户编号</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1740" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="003C546B" wsp:rsidP="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.customerName}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00544919">
+                <w:trPr>
+                    <w:trHeight w:val="420" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1746" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                            </w:rPr>
+                            <w:t>生产单日期</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2400" w:type="dxa" />
+                        <w:gridSpan w:val="2" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="003C546B">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.createdTime,"yyyy/MM/dd"}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1345" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>交货日期</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="2431" w:type="dxa" />
+                        <w:gridSpan w:val="2" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" />
+                                <wx:font wx:val="楷体" />
+                                <w:b />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="楷体" w:fareast="楷体" w:h-ansi="楷体" w:cs="楷体" w:hint="fareast" />
+                                <wx:font wx:val="楷体" />
+                                <w:b />
+                                <w:color w:val="FF0000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.overTime,"yyyy/MM/dd"}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1326" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                            <w:t>跟单员</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="1740" w:type="dxa" />
+                        <w:tcBorders>
+                            <w:top w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto" />
+                            <w:bottom w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:right w:val="single" w:sz="2" wx:bdrwidth="5" w:space="0" w:color="000000" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00B96FA2" wsp:rsidRDefault="003C546B" wsp:rsidP="00B96FA2">
+                        <w:pPr>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="28" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast" />
+                                <wx:font wx:val="微软雅黑" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz-cs w:val="22" />
+                            </w:rPr>
+                            <w:t>${order.restOrder.name}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+
+        </w:tbl>
+
+        <% if(order.modelColors.~size > 0){ %>
+        <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515" wsp:rsidP="003C546B">
+            <w:pPr>
+                <w:rPr>
+                    <w:rFonts w:hint="fareast" />
+                </w:rPr>
+            </w:pPr>
+            <w:r>
+          <w:br w:type="page"/>
+        </w:r>
+        </w:p>
+        <w:tbl>
+        <w:tblPr>
+          <w:tblW w:w="0" w:type="auto"/>
+            <w:tblInd w:w="0" w:type="dxa"/>
+            <w:tblBorders>
+            <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+        </w:tblPr>
+            <w:tblGrid>
+          <w:gridCol w:w="1504"/>
+                <w:gridCol w:w="5821"/>
+                <w:gridCol w:w="3663"/>
+        </w:tblGrid>
+            <w:tr wsp:rsidR="00B96FA2" wsp:rsidTr="00B96FA2">
+                <w:trPr>
+                    <w:trHeight w:val="540" />
+                </w:trPr>
+                <w:tc>
+                    <w:tcPr>
+                        <w:tcW w:w="0" w:type="auto" />
+                        <w:gridSpan w:val="8" />
+                        <w:tcBorders>
+                            <w:top w:val="nil" />
+                            <w:left w:val="nil" />
+                            <w:bottom w:val="nil" />
+                            <w:right w:val="nil" />
+                            <w:tl2br w:val="nil" />
+                            <w:tr2bl w:val="nil" />
+                        </w:tcBorders>
+                        <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+                        <w:vAlign w:val="center" />
+                    </w:tcPr>
+                    <w:p wsp:rsidR="00781515" wsp:rsidRDefault="00781515">
+                        <w:pPr>
+                            <w:jc w:val="left" />
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="44" />
+                            </w:rPr>
+                        </w:pPr>
+                        <w:r>
+                            <w:rPr>
+                                <w:rFonts w:ascii="宋体" w:fareast="宋体" w:h-ansi="宋体" w:cs="宋体" />
+                                <wx:font wx:val="宋体" />
+                                <w:b />
+                                <w:color w:val="000000" />
+                                <w:sz w:val="22" />
+                            </w:rPr>
+                            <w:t>生产单编号：${order.orderNums[0].orderNum}</w:t>
+                        </w:r>
+                    </w:p>
+                </w:tc>
+            </w:tr>
+            <w:tr wsp:rsidR="00000000" wsp:rsidTr="003C546B">
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="10988" w:type="dxa"/>
+                <w:gridSpan w:val="3"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+              <w:p wsp:rsidR="00000000" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+              </w:pPr>
+                  <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="32"/>
+                    <w:sz-cs w:val="28"/>
+                </w:rPr>
+                      <w:t>配色表</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+            <w:tr wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidTr="003C546B">
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1504" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+              <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                  <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                      <w:t>面料色</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="5821" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>字母颜色</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="3663" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>色数</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+            <%for(orderColos in order.modelColors){%>
+            <w:tr wsp:rsidR="00000000" wsp:rsidTr="003C546B">
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1504" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+              <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+              </w:pPr>
+                  <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                    <wx:font wx:val="等线"/>
+                </w:rPr>
+                      <w:t>${orderColos.color}</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="5821" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                    <wx:font wx:val="等线"/>
+                </w:rPr>
+                            <w:t>${orderColos.textColor}</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="3663" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                    <wx:font wx:val="等线"/>
+                </w:rPr>
+                            <w:t>${orderColos.sum}</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+            <%}%>
+      </w:tbl>
+        <w:p wsp:rsidR="00000000" wsp:rsidRDefault="003C546B">
+        <w:pPr>
+          <w:rPr>
+            <w:rFonts w:hint="fareast"/>
+          </w:rPr>
+        </w:pPr>
+      </w:p>
+        <w:tbl>
+        <w:tblPr>
+          <w:tblW w:w="0" w:type="auto"/>
+            <w:tblInd w:w="0" w:type="dxa"/>
+            <w:tblBorders>
+            <w:top w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:left w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:bottom w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:right w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:insideH w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+                <w:insideV w:val="single" w:sz="4" wx:bdrwidth="10" w:space="0" w:color="auto"/>
+          </w:tblBorders>
+            <w:tblLayout w:type="Fixed"/>
+        </w:tblPr>
+            <w:tblGrid>
+          <w:gridCol w:w="1554"/>
+                <w:gridCol w:w="1320"/>
+                <w:gridCol w:w="1060"/>
+                <w:gridCol w:w="2310"/>
+                <w:gridCol w:w="1010"/>
+                <w:gridCol w:w="1240"/>
+                <w:gridCol w:w="2494"/>
+        </w:tblGrid>
+            <w:tr wsp:rsidR="00000000" wsp:rsidTr="003C546B">
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="10988" w:type="dxa"/>
+                <w:gridSpan w:val="7"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+              <w:p wsp:rsidR="00000000" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:tabs>
+                  <w:tab w:val="left" w:pos="4396"/>
+                </w:tabs>
+                  <w:jc w:val="both"/>
+                  <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+              </w:pPr>
+                  <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                      <w:tab/>
+              </w:r>
+                  <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="32"/>
+                    <w:sz-cs w:val="28"/>
+                </w:rPr>
+                      <w:t>数量表</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+            <w:tr wsp:rsidR="003C546B" wsp:rsidRPr="003C546B" wsp:rsidTr="003C546B">
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1554" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+              <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                  <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                      <w:t>颜色</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1320" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>订单数</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1060" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:proofErr w:type="gramStart"/>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>扉</w:t>
+              </w:r>
+                        <w:proofErr w:type="gramEnd"/>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>上数</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="2310" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>实点数</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1010" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:proofErr w:type="gramStart"/>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>坏布</w:t>
+              </w:r>
+                        <w:proofErr w:type="gramEnd"/>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1240" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:proofErr w:type="gramStart"/>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>印坏</w:t>
+              </w:r>
+                        <w:proofErr w:type="gramEnd"/>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="2494" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRPr="003C546B" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+                  <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑"/>
+                      <wx:font wx:val="微软雅黑"/>
+                      <w:b/>
+                      <w:color w:val="000000"/>
+                      <w:sz w:val="28"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:r wsp:rsidRPr="003C546B">
+                <w:rPr>
+                  <w:rFonts w:ascii="微软雅黑" w:fareast="微软雅黑" w:h-ansi="微软雅黑" w:cs="微软雅黑" w:hint="fareast"/>
+                    <wx:font wx:val="微软雅黑"/>
+                    <w:b/>
+                    <w:color w:val="000000"/>
+                    <w:sz w:val="28"/>
+                </w:rPr>
+                            <w:t>出货时间</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+            <%var s=0;%>
+            <%for(orderNums in order.orderNums){%>
+            <%if(orderNums.sum != '0'){%>
+            <%s=s+parseInt(orderNums.sum);%>
+            <w:tr wsp:rsidR="003C546B" wsp:rsidTr="003C546B">
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1554" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+              <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+              </w:pPr>
+                  <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                    <wx:font wx:val="等线"/>
+                </w:rPr>
+                      <w:t>${orderNums.color}</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1320" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t>${orderNums.sum}</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1060" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="2310" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1010" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1240" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="2494" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+                  <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+            <%}%>
+            <%}%>
+            <w:tr wsp:rsidR="003C546B" wsp:rsidTr="003C546B">
+          <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1554" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+              <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="center"/>
+              </w:pPr>
+                  <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                    <wx:font wx:val="等线"/>
+                </w:rPr>
+                      <w:t>合计</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1320" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="003C546B" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t>${s}</w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1060" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="2310" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1010" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="1240" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+                <w:tc>
+            <w:tcPr>
+              <w:tcW w:w="2494" w:type="dxa"/>
+                <w:shd w:val="clear" w:color="auto" w:fill="auto"/>
+            </w:tcPr>
+                    <w:p wsp:rsidR="00000000" wsp:rsidRDefault="007D095E" wsp:rsidP="003C546B">
+              <w:pPr>
+                <w:widowControl w:val="off"/>
+                  <w:jc w:val="both"/>
+                  <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+              </w:pPr>
+                        <w:r>
+                <w:rPr>
+                  <w:rFonts w:hint="fareast"/>
+                </w:rPr>
+                            <w:t></w:t>
+              </w:r>
+            </w:p>
+          </w:tc>
+        </w:tr>
+      </w:tbl>
+        <w:p wsp:rsidR="00000000" wsp:rsidRDefault="003C546B"/>
+        <w:p wsp:rsidR="003C546B" wsp:rsidRDefault="003C546B"/>
+        <%}%>
+        <w:sectPr wsp:rsidR="00781515" wsp:rsidSect="00E91CCC">
+            <w:pgSz w:w="11906" w:h="16838" w:code="9" />
+            <w:pgMar w:top="57" w:right="567" w:bottom="567" w:left="567" w:header="709" w:footer="709" w:gutter="0" />
+            <w:cols w:space="708" />
+            <w:docGrid w:line-pitch="360" />
+        </w:sectPr>
+    </wx:sect>
+</w:body>
+</w:wordDocument>

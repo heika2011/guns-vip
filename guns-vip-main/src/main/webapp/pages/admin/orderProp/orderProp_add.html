@@ -1,0 +1,111 @@
+@layout("/common/_form.html",{js:["/assets/admin/orderProp/orderProp_add.js"]}){
+
+<form class="layui-form" id="orderPropForm" lay-filter="orderPropForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">基本信息</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="" type="hidden"/>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">生产单类型编号<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="orderNum" name="orderNum" placeholder="请输入生产单类型编号" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">生产单类型名称<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="type" name="type" placeholder="请输入生产单类型名称" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">生产单进度<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="typeName" name="typeName" placeholder="请输入角色对应名字" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">顺序<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="sx" name="sx" placeholder="请输入顺序" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+    <div class="layui-transfer layui-form layui-border-box" lay-filter="LAY-transfer-1">
+        <div class="layui-transfer-box" data-index="0" style="width: 200px; height: 360px;">
+            <div class="layui-transfer-header">
+                <input type="checkbox" name="layTransferLeftCheckAll" lay-filter="layTransferCheckbox" lay-type="all" lay-skin="primary" title="列表一">
+                <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>列表一</span><i class="layui-icon layui-icon-ok"></i>
+                </div>
+            </div>
+            <ul class="layui-transfer-data" style="height: 320px;"><li>
+                <input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="李白" value="1">
+                <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>李白</span><i class="layui-icon layui-icon-ok"></i>
+                </div>
+            </li>
+                <li>
+                    <input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="杜甫" value="2">
+                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>杜甫</span><i class="layui-icon layui-icon-ok"></i>
+                    </div>
+                </li>
+                <li><input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="苏轼" value="3">
+                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>苏轼</span><i class="layui-icon layui-icon-ok"></i>
+                    </div></li><li><input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="李清照" value="4">
+                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary">
+                        <span>李清照</span><i class="layui-icon layui-icon-ok"></i>
+                    </div>
+                </li>
+                <li><input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="鲁迅" disabled="" value="5">
+                    <div class="layui-unselect layui-form-checkbox layui-checkbox-disbaled layui-disabled" lay-skin="primary"><span>鲁迅</span><i class="layui-icon layui-icon-ok"></i>
+                    </div>
+                </li>
+                <li><input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="巴金" value="6">
+                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>巴金</span><i class="layui-icon layui-icon-ok"></i>
+                    </div>
+                </li>
+                <li><input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="冰心" value="7"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>冰心</span><i class="layui-icon layui-icon-ok"></i>
+                </div>
+                </li>
+                <li><input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="矛盾" value="8"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>矛盾</span><i class="layui-icon layui-icon-ok"></i>
+                </div>
+                </li>
+                <li><input type="checkbox" name="layTransferLeftCheck" lay-skin="primary" lay-filter="layTransferCheckbox" title="贤心" value="9"><div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>贤心</span><i class="layui-icon layui-icon-ok"></i>
+                </div>
+                </li>
+            </ul>
+        </div>
+        <div class="layui-transfer-active">
+            <button type="button" class="layui-btn layui-btn-sm layui-btn-primary layui-btn" data-index="0"><i class="layui-icon layui-icon-next"></i></button>
+            <button type="button" class="layui-btn layui-btn-sm layui-btn-primary layui-btn-disabled" data-index="1"><i class="layui-icon layui-icon-prev"></i></button>
+        </div>
+        <div class="layui-transfer-box" data-index="1" style="width: 200px; height: 360px;">
+            <div class="layui-transfer-header">
+                <input type="checkbox" name="layTransferRightCheckAll" lay-filter="layTransferCheckbox" lay-type="all" lay-skin="primary" title="列表二">
+                <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>列表二</span><i class="layui-icon layui-icon-ok"></i>
+                </div>
+            </div>
+            <ul class="layui-transfer-data" style="height: 320px;"><p class="layui-none">无数据</p>
+            </ul>
+        </div>
+        <div class="layui-transfer-box" data-index="1" style="width: 200px; height: 360px;">
+            <div class="layui-transfer-header">
+                <input type="checkbox" name="layTransferRightCheckAll" lay-filter="layTransferCheckbox" lay-type="all" lay-skin="primary" title="列表二">
+                <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>列表二</span><i class="layui-icon layui-icon-ok"></i>
+                </div>
+            </div>
+            <ul class="layui-transfer-data" style="height: 320px;">
+                <p class="layui-none">无数据</p>
+            </ul>
+        </div>
+    </div>
+@}

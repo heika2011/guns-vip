@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.admin.mapper.AdminCustomerMapper">
+
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.yinhua.admin.entity.Customer">
+        <id column="id" property="id" />
+        <result column="num" property="num" />
+        <result column="name" property="name" />
+        <result column="contact" property="contact" />
+        <result column="phone" property="phone" />
+        <result column="addr" property="addr" />
+        <result column="level" property="level" />
+        <result column="requires" property="requires" />
+        <result column="settle" property="settle" />
+        <result column="note" property="note" />
+        <result column="created_time" property="createdTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="open_id" property="openId" />
+        <result column="w_name" property="wName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", num AS "num", name AS "name", contact AS "contact", phone AS "phone", addr AS "addr", level AS "level", requires AS "requires", settle AS "settle", note AS "note", created_time AS "createdTime", update_time AS "updateTime",open_id AS "openId",w_name AS "wName"
+    </sql>
+
+
+    <select id="customList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.CustomerResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.CustomerParam">
+        select
+        <include refid="Base_Column_List"/>
+        from customer where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.contact != null and paramCondition.contact != ''">
+                and contact like CONCAT('%',#{paramCondition.contact},'%')
+            </if>
+            <if test="paramCondition.phone != null and paramCondition.phone != ''">
+                and phone like CONCAT('%',#{paramCondition.phone},'%')
+            </if>
+            <if test="paramCondition.addr != null and paramCondition.addr != ''">
+                and addr like CONCAT('%',#{paramCondition.addr},'%')
+            </if>
+            <if test="paramCondition.level != null and paramCondition.level != ''">
+                and level like CONCAT('%',#{paramCondition.level},'%')
+            </if>
+            <if test="paramCondition.requires != null and paramCondition.requires != ''">
+                and requires like CONCAT('%',#{paramCondition.requires},'%')
+            </if>
+            <if test="paramCondition.settle != null and paramCondition.settle != ''">
+                and settle like CONCAT('%',#{paramCondition.settle},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.updateTime != null and paramCondition.updateTime != ''">
+                and update_time like CONCAT('%',#{paramCondition.updateTime},'%')
+            </if>
+    </select>
+
+    <select id="customMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.CustomerParam">
+        select
+        <include refid="Base_Column_List"/>
+        from customer where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.contact != null and paramCondition.contact != ''">
+                and contact like CONCAT('%',#{paramCondition.contact},'%')
+            </if>
+            <if test="paramCondition.phone != null and paramCondition.phone != ''">
+                and phone like CONCAT('%',#{paramCondition.phone},'%')
+            </if>
+            <if test="paramCondition.addr != null and paramCondition.addr != ''">
+                and addr like CONCAT('%',#{paramCondition.addr},'%')
+            </if>
+            <if test="paramCondition.level != null and paramCondition.level != ''">
+                and level like CONCAT('%',#{paramCondition.level},'%')
+            </if>
+            <if test="paramCondition.requires != null and paramCondition.requires != ''">
+                and requires like CONCAT('%',#{paramCondition.requires},'%')
+            </if>
+            <if test="paramCondition.settle != null and paramCondition.settle != ''">
+                and settle like CONCAT('%',#{paramCondition.settle},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.updateTime != null and paramCondition.updateTime != ''">
+                and update_time like CONCAT('%',#{paramCondition.updateTime},'%')
+            </if>
+    </select>
+
+    <select id="customPageList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.CustomerResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.CustomerParam">
+        select
+        <include refid="Base_Column_List"/>
+        from customer where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.contact != null and paramCondition.contact != ''">
+                and contact like CONCAT('%',#{paramCondition.contact},'%')
+            </if>
+            <if test="paramCondition.phone != null and paramCondition.phone != ''">
+                and phone like CONCAT('%',#{paramCondition.phone},'%')
+            </if>
+            <if test="paramCondition.addr != null and paramCondition.addr != ''">
+                and addr like CONCAT('%',#{paramCondition.addr},'%')
+            </if>
+            <if test="paramCondition.level != null and paramCondition.level != ''">
+                and level like CONCAT('%',#{paramCondition.level},'%')
+            </if>
+            <if test="paramCondition.requires != null and paramCondition.requires != ''">
+                and requires like CONCAT('%',#{paramCondition.requires},'%')
+            </if>
+            <if test="paramCondition.settle != null and paramCondition.settle != ''">
+                and settle like CONCAT('%',#{paramCondition.settle},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.updateTime != null and paramCondition.updateTime != ''">
+                and update_time like CONCAT('%',#{paramCondition.updateTime},'%')
+            </if>
+            <if test="paramCondition.condition != null and paramCondition.condition != ''">
+                and num like CONCAT('%',#{paramCondition.condition},'%')
+                or name like CONCAT('%',#{paramCondition.condition},'%')
+                or contact like CONCAT('%',#{paramCondition.condition},'%')
+                or phone like CONCAT('%',#{paramCondition.condition},'%')
+                or addr like CONCAT('%',#{paramCondition.condition},'%')
+            </if>
+            <if test="paramCondition.un != null and paramCondition.un != ''">
+                and open_id is null
+            </if>
+    </select>
+
+    <select id="customPageMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.CustomerParam">
+        select
+        <include refid="Base_Column_List"/>
+        from customer where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.contact != null and paramCondition.contact != ''">
+                and contact like CONCAT('%',#{paramCondition.contact},'%')
+            </if>
+            <if test="paramCondition.phone != null and paramCondition.phone != ''">
+                and phone like CONCAT('%',#{paramCondition.phone},'%')
+            </if>
+            <if test="paramCondition.addr != null and paramCondition.addr != ''">
+                and addr like CONCAT('%',#{paramCondition.addr},'%')
+            </if>
+            <if test="paramCondition.level != null and paramCondition.level != ''">
+                and level like CONCAT('%',#{paramCondition.level},'%')
+            </if>
+            <if test="paramCondition.requires != null and paramCondition.requires != ''">
+                and requires like CONCAT('%',#{paramCondition.requires},'%')
+            </if>
+            <if test="paramCondition.settle != null and paramCondition.settle != ''">
+                and settle like CONCAT('%',#{paramCondition.settle},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.updateTime != null and paramCondition.updateTime != ''">
+                and update_time like CONCAT('%',#{paramCondition.updateTime},'%')
+            </if>
+    </select>
+
+</mapper>

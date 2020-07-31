@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.admin.mapper.AdminOrderNumMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.yinhua.admin.entity.OrderNum">
+        <result column="num" property="num" />
+        <result column="order_num" property="orderNum" />
+        <result column="color" property="color" />
+        <result column="sum" property="sum" />
+        <result column="units" property="units" />
+        <result column="realy_cut" property="realyCut" />
+        <result column="realy_point" property="realyPoint" />
+        <result column="bad_linling" property="badLinling" />
+        <result column="bad_f" property="badF" />
+        <result column="out_time" property="outTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        num AS "num", order_num AS "orderNum", color AS "color", sum AS "sum", units AS "units", realy_cut AS "realyCut", realy_point AS "realyPoint", bad_linling AS "badLinling", bad_f AS "badF", out_time AS "outTime"
+    </sql>
+
+
+    <select id="customList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.OrderNumResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderNumParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_num where 1 = 1
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.color != null and paramCondition.color != ''">
+                and color like CONCAT('%',#{paramCondition.color},'%')
+            </if>
+            <if test="paramCondition.sum != null and paramCondition.sum != ''">
+                and sum like CONCAT('%',#{paramCondition.sum},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.realyCut != null and paramCondition.realyCut != ''">
+                and realy_cut like CONCAT('%',#{paramCondition.realyCut},'%')
+            </if>
+            <if test="paramCondition.realyPoint != null and paramCondition.realyPoint != ''">
+                and realy_point like CONCAT('%',#{paramCondition.realyPoint},'%')
+            </if>
+            <if test="paramCondition.badLinling != null and paramCondition.badLinling != ''">
+                and bad_linling like CONCAT('%',#{paramCondition.badLinling},'%')
+            </if>
+            <if test="paramCondition.badF != null and paramCondition.badF != ''">
+                and bad_f like CONCAT('%',#{paramCondition.badF},'%')
+            </if>
+            <if test="paramCondition.outTime != null and paramCondition.outTime != ''">
+                and out_time like CONCAT('%',#{paramCondition.outTime},'%')
+            </if>
+    </select>
+
+    <select id="customMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderNumParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_num where 1 = 1
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.color != null and paramCondition.color != ''">
+                and color like CONCAT('%',#{paramCondition.color},'%')
+            </if>
+            <if test="paramCondition.sum != null and paramCondition.sum != ''">
+                and sum like CONCAT('%',#{paramCondition.sum},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.realyCut != null and paramCondition.realyCut != ''">
+                and realy_cut like CONCAT('%',#{paramCondition.realyCut},'%')
+            </if>
+            <if test="paramCondition.realyPoint != null and paramCondition.realyPoint != ''">
+                and realy_point like CONCAT('%',#{paramCondition.realyPoint},'%')
+            </if>
+            <if test="paramCondition.badLinling != null and paramCondition.badLinling != ''">
+                and bad_linling like CONCAT('%',#{paramCondition.badLinling},'%')
+            </if>
+            <if test="paramCondition.badF != null and paramCondition.badF != ''">
+                and bad_f like CONCAT('%',#{paramCondition.badF},'%')
+            </if>
+            <if test="paramCondition.outTime != null and paramCondition.outTime != ''">
+                and out_time like CONCAT('%',#{paramCondition.outTime},'%')
+            </if>
+    </select>
+
+    <select id="customPageList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.OrderNumResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderNumParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_num where 1 = 1
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.color != null and paramCondition.color != ''">
+                and color like CONCAT('%',#{paramCondition.color},'%')
+            </if>
+            <if test="paramCondition.sum != null and paramCondition.sum != ''">
+                and sum like CONCAT('%',#{paramCondition.sum},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.realyCut != null and paramCondition.realyCut != ''">
+                and realy_cut like CONCAT('%',#{paramCondition.realyCut},'%')
+            </if>
+            <if test="paramCondition.realyPoint != null and paramCondition.realyPoint != ''">
+                and realy_point like CONCAT('%',#{paramCondition.realyPoint},'%')
+            </if>
+            <if test="paramCondition.badLinling != null and paramCondition.badLinling != ''">
+                and bad_linling like CONCAT('%',#{paramCondition.badLinling},'%')
+            </if>
+            <if test="paramCondition.badF != null and paramCondition.badF != ''">
+                and bad_f like CONCAT('%',#{paramCondition.badF},'%')
+            </if>
+            <if test="paramCondition.outTime != null and paramCondition.outTime != ''">
+                and out_time like CONCAT('%',#{paramCondition.outTime},'%')
+            </if>
+    </select>
+
+    <select id="customPageMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderNumParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_num where 1 = 1
+            <if test="paramCondition.num != null and paramCondition.num != ''">
+                and num like CONCAT('%',#{paramCondition.num},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.color != null and paramCondition.color != ''">
+                and color like CONCAT('%',#{paramCondition.color},'%')
+            </if>
+            <if test="paramCondition.sum != null and paramCondition.sum != ''">
+                and sum like CONCAT('%',#{paramCondition.sum},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.realyCut != null and paramCondition.realyCut != ''">
+                and realy_cut like CONCAT('%',#{paramCondition.realyCut},'%')
+            </if>
+            <if test="paramCondition.realyPoint != null and paramCondition.realyPoint != ''">
+                and realy_point like CONCAT('%',#{paramCondition.realyPoint},'%')
+            </if>
+            <if test="paramCondition.badLinling != null and paramCondition.badLinling != ''">
+                and bad_linling like CONCAT('%',#{paramCondition.badLinling},'%')
+            </if>
+            <if test="paramCondition.badF != null and paramCondition.badF != ''">
+                and bad_f like CONCAT('%',#{paramCondition.badF},'%')
+            </if>
+            <if test="paramCondition.outTime != null and paramCondition.outTime != ''">
+                and out_time like CONCAT('%',#{paramCondition.outTime},'%')
+            </if>
+    </select>
+
+</mapper>

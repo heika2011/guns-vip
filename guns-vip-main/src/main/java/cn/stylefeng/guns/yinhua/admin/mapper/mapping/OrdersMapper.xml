@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.admin.mapper.AdminOrdersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.yinhua.admin.entity.Orders">
+        <id column="id" property="id" />
+        <result column="model_id" property="modelId" />
+        <result column="customer_name" property="customerName" />
+        <result column="model_name" property="modelName" />
+        <result column="order_num" property="orderNum" />
+        <result column="name" property="name" />
+        <result column="order_progress" property="orderProgress" />
+        <result column="order_type" property="orderType" />
+        <result column="note" property="note" />
+        <result column="urag" property="urag" />
+        <result column="status" property="status" />
+        <result column="created_time" property="createdTime" />
+        <result column="over_time" property="overTime" />
+        <result column="error" property="error" />
+        <result column="order_prog" property="orderProg" />
+        <result column="units" property="units" />
+        <result column="allcount" property="allcount" />
+        <result column="hav_sheet" property="havSheet" />
+        <result column="name_id" property="nameId" />
+        <result column="realy_count" property="realyCount" />
+        <result column="rea_time" property="reaTime" />
+        <result column="last_const" property="lastConst" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", model_id AS "modelId", customer_name AS "customerName", model_name AS "modelName", order_num AS "orderNum", name AS "name", order_progress AS "orderProgress", order_type AS "orderType", note AS "note", urag AS "urag", status AS "status", created_time AS "createdTime", over_time AS "overTime", error AS "error", order_prog AS "orderProg", units AS "units", allcount AS "allcount", hav_sheet AS "havSheet", name_id AS "nameId", realy_count AS "realyCount", rea_time AS "reaTime", last_const AS "lastConst"
+    </sql>
+
+
+    <select id="customList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.OrdersResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrdersParam">
+        select
+        <include refid="Base_Column_List"/>
+        from orders where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.modelId != null and paramCondition.modelId != ''">
+                and model_id like CONCAT('%',#{paramCondition.modelId},'%')
+            </if>
+            <if test="paramCondition.customerName != null and paramCondition.customerName != ''">
+                and customer_name like CONCAT('%',#{paramCondition.customerName},'%')
+            </if>
+            <if test="paramCondition.modelName != null and paramCondition.modelName != ''">
+                and model_name like CONCAT('%',#{paramCondition.modelName},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.orderProgress != null and paramCondition.orderProgress != ''">
+                and order_progress like CONCAT('%',#{paramCondition.orderProgress},'%')
+            </if>
+            <if test="paramCondition.orderType != null and paramCondition.orderType != ''">
+                and order_type like CONCAT('%',#{paramCondition.orderType},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.urag != null and paramCondition.urag != ''">
+                and urag like CONCAT('%',#{paramCondition.urag},'%')
+            </if>
+            <if test="paramCondition.status != null and paramCondition.status != ''">
+                and status like CONCAT('%',#{paramCondition.status},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.overTime != null and paramCondition.overTime != ''">
+                and over_time like CONCAT('%',#{paramCondition.overTime},'%')
+            </if>
+            <if test="paramCondition.error != null and paramCondition.error != ''">
+                and error like CONCAT('%',#{paramCondition.error},'%')
+            </if>
+            <if test="paramCondition.orderProg != null and paramCondition.orderProg != ''">
+                and order_prog like CONCAT('%',#{paramCondition.orderProg},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.allcount != null and paramCondition.allcount != ''">
+                and allcount like CONCAT('%',#{paramCondition.allcount},'%')
+            </if>
+            <if test="paramCondition.havSheet != null and paramCondition.havSheet != ''">
+                and hav_sheet like CONCAT('%',#{paramCondition.havSheet},'%')
+            </if>
+            <if test="paramCondition.nameId != null and paramCondition.nameId != ''">
+                and name_id like CONCAT('%',#{paramCondition.nameId},'%')
+            </if>
+            <if test="paramCondition.realyCount != null and paramCondition.realyCount != ''">
+                and realy_count like CONCAT('%',#{paramCondition.realyCount},'%')
+            </if>
+            <if test="paramCondition.reaTime != null and paramCondition.reaTime != ''">
+                and rea_time like CONCAT('%',#{paramCondition.reaTime},'%')
+            </if>
+            <if test="paramCondition.lastConst != null and paramCondition.lastConst != ''">
+                and last_const like CONCAT('%',#{paramCondition.lastConst},'%')
+            </if>
+    </select>
+
+    <select id="customMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrdersParam">
+        select
+        <include refid="Base_Column_List"/>
+        from orders where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.modelId != null and paramCondition.modelId != ''">
+                and model_id like CONCAT('%',#{paramCondition.modelId},'%')
+            </if>
+            <if test="paramCondition.customerName != null and paramCondition.customerName != ''">
+                and customer_name like CONCAT('%',#{paramCondition.customerName},'%')
+            </if>
+            <if test="paramCondition.modelName != null and paramCondition.modelName != ''">
+                and model_name like CONCAT('%',#{paramCondition.modelName},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.orderProgress != null and paramCondition.orderProgress != ''">
+                and order_progress like CONCAT('%',#{paramCondition.orderProgress},'%')
+            </if>
+            <if test="paramCondition.orderType != null and paramCondition.orderType != ''">
+                and order_type like CONCAT('%',#{paramCondition.orderType},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.urag != null and paramCondition.urag != ''">
+                and urag like CONCAT('%',#{paramCondition.urag},'%')
+            </if>
+            <if test="paramCondition.status != null and paramCondition.status != ''">
+                and status like CONCAT('%',#{paramCondition.status},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.overTime != null and paramCondition.overTime != ''">
+                and over_time like CONCAT('%',#{paramCondition.overTime},'%')
+            </if>
+            <if test="paramCondition.error != null and paramCondition.error != ''">
+                and error like CONCAT('%',#{paramCondition.error},'%')
+            </if>
+            <if test="paramCondition.orderProg != null and paramCondition.orderProg != ''">
+                and order_prog like CONCAT('%',#{paramCondition.orderProg},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.allcount != null and paramCondition.allcount != ''">
+                and allcount like CONCAT('%',#{paramCondition.allcount},'%')
+            </if>
+            <if test="paramCondition.havSheet != null and paramCondition.havSheet != ''">
+                and hav_sheet like CONCAT('%',#{paramCondition.havSheet},'%')
+            </if>
+            <if test="paramCondition.nameId != null and paramCondition.nameId != ''">
+                and name_id like CONCAT('%',#{paramCondition.nameId},'%')
+            </if>
+            <if test="paramCondition.realyCount != null and paramCondition.realyCount != ''">
+                and realy_count like CONCAT('%',#{paramCondition.realyCount},'%')
+            </if>
+            <if test="paramCondition.reaTime != null and paramCondition.reaTime != ''">
+                and rea_time like CONCAT('%',#{paramCondition.reaTime},'%')
+            </if>
+            <if test="paramCondition.lastConst != null and paramCondition.lastConst != ''">
+                and last_const like CONCAT('%',#{paramCondition.lastConst},'%')
+            </if>
+    </select>
+
+    <resultMap id="selectModelName" type="cn.stylefeng.guns.yinhua.admin.model.result.OrdersResult">
+        <id property="id" column="id"/>
+        <collection property="model"
+        column="modelId"
+        select="cn.stylefeng.guns.yinhua.admin.mapper.AdminModelMapper.selectNameAndCustomer">
+        </collection>
+
+    </resultMap>
+
+    <select id="customPageList" resultMap="selectModelName" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrdersParam">
+        select
+        <include refid="Base_Column_List"/>
+        from orders where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.modelId != null and paramCondition.modelId != ''">
+                and model_id like CONCAT('%',#{paramCondition.modelId},'%')
+            </if>
+            <if test="paramCondition.customerName != null and paramCondition.customerName != ''">
+                and customer_name like CONCAT('%',#{paramCondition.customerName},'%')
+            </if>
+            <if test="paramCondition.modelName != null and paramCondition.modelName != ''">
+                and model_name like CONCAT('%',#{paramCondition.modelName},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.orderProgress != null and paramCondition.orderProgress != ''">
+                and order_progress like CONCAT('%',#{paramCondition.orderProgress},'%')
+            </if>
+            <if test="paramCondition.orderType != null and paramCondition.orderType != ''">
+                and order_type like CONCAT('%',#{paramCondition.orderType},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.urag != null and paramCondition.urag != ''">
+                and urag like CONCAT('%',#{paramCondition.urag},'%')
+            </if>
+            <if test="paramCondition.status != null and paramCondition.status != ''">
+                and status like CONCAT('%',#{paramCondition.status},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.overTime != null and paramCondition.overTime != ''">
+                and over_time like CONCAT('%',#{paramCondition.overTime},'%')
+            </if>
+            <if test="paramCondition.error != null and paramCondition.error != ''">
+                and error like CONCAT('%',#{paramCondition.error},'%')
+            </if>
+            <if test="paramCondition.orderProg != null and paramCondition.orderProg != ''">
+                and order_prog like CONCAT('%',#{paramCondition.orderProg},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.allcount != null and paramCondition.allcount != ''">
+                and allcount like CONCAT('%',#{paramCondition.allcount},'%')
+            </if>
+            <if test="paramCondition.havSheet != null and paramCondition.havSheet != ''">
+                and hav_sheet like CONCAT('%',#{paramCondition.havSheet},'%')
+            </if>
+            <if test="paramCondition.nameId != null and paramCondition.nameId != ''">
+                and name_id like CONCAT('%',#{paramCondition.nameId},'%')
+            </if>
+            <if test="paramCondition.realyCount != null and paramCondition.realyCount != ''">
+                and realy_count like CONCAT('%',#{paramCondition.realyCount},'%')
+            </if>
+            <if test="paramCondition.reaTime != null and paramCondition.reaTime != ''">
+                and rea_time like CONCAT('%',#{paramCondition.reaTime},'%')
+            </if>
+            <if test="paramCondition.lastConst != null and paramCondition.lastConst != ''">
+                and last_const like CONCAT('%',#{paramCondition.lastConst},'%')
+            </if>
+            <if test="paramCondition.condition != null and paramCondition.condition != ''">
+                and customer_name like CONCAT('%',#{paramCondition.condition},'%')
+                or order_num like CONCAT('%',#{paramCondition.condition},'%')
+                or model_name like CONCAT('%',#{paramCondition.condition},'%')
+                or (select name from customer where num = orders.customer_name) like concat('%',#{paramCondition.condition},'%')
+            </if>
+            order by created_time desc
+    </select>
+
+    <select id="customPageMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrdersParam">
+        select
+        <include refid="Base_Column_List"/>
+        from orders where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.modelId != null and paramCondition.modelId != ''">
+                and model_id like CONCAT('%',#{paramCondition.modelId},'%')
+            </if>
+            <if test="paramCondition.customerName != null and paramCondition.customerName != ''">
+                and customer_name like CONCAT('%',#{paramCondition.customerName},'%')
+            </if>
+            <if test="paramCondition.modelName != null and paramCondition.modelName != ''">
+                and model_name like CONCAT('%',#{paramCondition.modelName},'%')
+            </if>
+            <if test="paramCondition.orderNum != null and paramCondition.orderNum != ''">
+                and order_num like CONCAT('%',#{paramCondition.orderNum},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.orderProgress != null and paramCondition.orderProgress != ''">
+                and order_progress like CONCAT('%',#{paramCondition.orderProgress},'%')
+            </if>
+            <if test="paramCondition.orderType != null and paramCondition.orderType != ''">
+                and order_type like CONCAT('%',#{paramCondition.orderType},'%')
+            </if>
+            <if test="paramCondition.note != null and paramCondition.note != ''">
+                and note like CONCAT('%',#{paramCondition.note},'%')
+            </if>
+            <if test="paramCondition.urag != null and paramCondition.urag != ''">
+                and urag like CONCAT('%',#{paramCondition.urag},'%')
+            </if>
+            <if test="paramCondition.status != null and paramCondition.status != ''">
+                and status like CONCAT('%',#{paramCondition.status},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.overTime != null and paramCondition.overTime != ''">
+                and over_time like CONCAT('%',#{paramCondition.overTime},'%')
+            </if>
+            <if test="paramCondition.error != null and paramCondition.error != ''">
+                and error like CONCAT('%',#{paramCondition.error},'%')
+            </if>
+            <if test="paramCondition.orderProg != null and paramCondition.orderProg != ''">
+                and order_prog like CONCAT('%',#{paramCondition.orderProg},'%')
+            </if>
+            <if test="paramCondition.units != null and paramCondition.units != ''">
+                and units like CONCAT('%',#{paramCondition.units},'%')
+            </if>
+            <if test="paramCondition.allcount != null and paramCondition.allcount != ''">
+                and allcount like CONCAT('%',#{paramCondition.allcount},'%')
+            </if>
+            <if test="paramCondition.havSheet != null and paramCondition.havSheet != ''">
+                and hav_sheet like CONCAT('%',#{paramCondition.havSheet},'%')
+            </if>
+            <if test="paramCondition.nameId != null and paramCondition.nameId != ''">
+                and name_id like CONCAT('%',#{paramCondition.nameId},'%')
+            </if>
+            <if test="paramCondition.realyCount != null and paramCondition.realyCount != ''">
+                and realy_count like CONCAT('%',#{paramCondition.realyCount},'%')
+            </if>
+            <if test="paramCondition.reaTime != null and paramCondition.reaTime != ''">
+                and rea_time like CONCAT('%',#{paramCondition.reaTime},'%')
+            </if>
+            <if test="paramCondition.lastConst != null and paramCondition.lastConst != ''">
+                and last_const like CONCAT('%',#{paramCondition.lastConst},'%')
+            </if>
+    </select>
+
+</mapper>

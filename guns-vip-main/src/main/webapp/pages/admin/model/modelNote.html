@@ -1,0 +1,42 @@
+@layout("/common/_form.html",{js:["/assets/admin/model/modelNote.js"]}){
+
+<div style="padding: 20px; background-color: #F2F2F2;">
+    <div class="layui-row layui-col-space15">
+        @if(note == null||note.~size==0){
+        <div class="layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">当前款式下无款式日志</div>
+                <div class="layui-card-body">
+                </div>
+            </div>
+        </div>
+        @}else
+        @for(n in note){
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header">
+                    ${n.createdTime,'yyyy年MM月dd日 HH:mm:ss'}
+                    <div style="display:inline;margin-left: 20px;">
+                        ${n.name}
+                    </div>
+                </div>
+                <div class="layui-card-body">
+                    ${n.text} <br/>
+                    @if(n.image != null || n.image!=''){
+                        <div id="list" class="layer-photos-demo">
+                            @for(var i=0;i< strutil.split(n.image,',').~size;i++){
+                            <img layer-src="${strutil.split(n.image,',')[i]}" src="${strutil.split(n.image,',')[i]}" style="width: 150px;height: 140px">
+                            @}
+                        </div>
+                    @}
+                </div>
+            </div>
+        </div>
+
+        @}
+
+
+    </div>
+</div>
+
+@}

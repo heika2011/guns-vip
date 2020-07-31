@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.mobile.mapper.CustomerMapper">
+    <update id="changeCustomerCreate">
+        update customer set created_user = #{userId} where num = #{num}
+    </update>
+
+    <select id="selectNameByNum" resultType="String">
+       select name from customer where num =#{num}
+   </select>
+
+    <select id="selectNextNum" resultType="java.lang.Long">
+        SELECT auto_increment FROM information_schema.`TABLES` WHERE TABLE_SCHEMA='yinhua' AND TABLE_NAME='customer';
+    </select>
+</mapper>

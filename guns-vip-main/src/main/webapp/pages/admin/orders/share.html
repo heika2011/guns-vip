@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>分享生产单</title>
+    <script type="text/javascript" src="${ctxPath}/assets/common/libs/jquery/jquery-3.2.1.min.js?v=${constants.getReleaseVersion()}"></script>
+</head>
+<body>
+<span id="wx_share_span" style="display: none"></span>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#wx_share_span").data("shareTitle", "${order.restAllModel.model.name==null?'':order.restAllModel.model.name} ${order.restAllModel.model.modelNum==null?'':order.restAllModel.model.modelNum} ${order.restAllModel.model.num==null?'':order.restAllModel.model.num}");
+        $("#wx_share_span").data("shareDesc", "");
+        $("#wx_share_span").data("shareLink", "${url}/oauth/render/wechat?url=${order.restOrder.orderNum}&type=20");
+        $("#wx_share_span").data("shareImg", "/banner.jpg");
+    });
+</script>
+
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="${ctxPath}/assets/admin/orders/wxShare.js?v=${constants.getReleaseVersion()}"></script>
+</body>
+</html>

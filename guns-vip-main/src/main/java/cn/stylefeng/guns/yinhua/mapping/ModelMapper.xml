@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.mobile.mapper.ModelMapper">
+
+    <update id="setSceenNum">
+        update model set screen_num = #{num} where num = #{modelNum}
+    </update>
+
+    <select id="getModelData" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeA,
+        (select count(*) from model where status = 1) as typeB,
+        (select count(*) from model where status = 2) as typeC,
+        (select count(*) from model where status = 3) as typeD,
+        (select count(*) from model where status = 4) as typeE
+        from model where num not in (select model_id from orders group by model_id)
+    </select>
+
+
+    <update id="updateImageId">
+        update model_image set modelinfo_id = ${modelInfoId},num = #{num}
+        where id = #{ids}
+    </update>
+    <select id="selectNameByNum" resultType="String">
+        select name from model where num = #{num}
+    </select>
+    <resultMap id="selectCustomerName" type="cn.stylefeng.guns.yinhua.entity.yinhua.model.Model">
+        <collection property="customerName"
+                    column="customer"
+                    select="cn.stylefeng.guns.yinhua.mobile.mapper.CustomerMapper.selectNameByNum">
+
+        </collection>
+    </resultMap>
+    <select id="selectOneModel" resultMap="selectCustomerName">
+        select * from model where num = #{num}
+    </select>
+
+    <resultMap id="selectModelAll" type="cn.stylefeng.guns.yinhua.entity.yinhua.model.Model">
+        <id column="id" property="id"/>
+        <result property="level" column="level"/>
+        <discriminator javaType="string" column="see">
+            <case value="1">
+                <collection property="customer"
+                            column="customer"
+                            select="cn.stylefeng.guns.yinhua.mobile.mapper.OrderMapper.findCustomerByNum"
+                >
+                </collection>
+            </case>
+        </discriminator>
+    </resultMap>
+    
+    <select id="selectMyPage" resultMap="selectModelAll">
+        select *,(select see from sys_user where user_id = #{userId}) as see from model
+        <where>
+            <if test="keyWord !=null and keyWord !=''">
+                (select name from customer where num = model.customer) like concat('%',#{keyWord},'%') or
+            </if>
+            ${ew.sqlSegment}
+        </where>
+        order by created_time desc
+    </select>
+
+    <select id="selectModelByNum" resultMap="selectModelAll">
+        select *,(select see from sys_user where user_id = #{userId}) as see,
+        (select level from customer where num = model.customer) as level
+         from model where num = #{num}
+    </select>
+
+    <select id="findModelMuchs" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.rest.RestOrderConst">
+        select * from order_const_log where order_num like concat('%',#{orderNum},'%') and last_const is not null order by created_time desc limit 1
+    </select>
+    <select id="findModelMuchsLog" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.rest.RestOrderConstLog">
+        select * from order_const_log where order_num like CONCAT('%',#{num},'%') and last_const is not null and consts != 0 order by created_time desc
+    </select>
+
+    <update id="updateModelMuchsNote">
+        update order_const_log set note = #{note} where order_num = #{orderNum}
+    </update>
+    <update id="updateModelMuchsChangeNote">
+        update order_const_log set change_note = #{note} where order_num = #{orderNum}
+    </update>
+
+    <update id="updateSceenLocal">
+        update model set sceen_local = #{local} where num = #{num}
+    </update>
+
+    <select id="getSceenLocal" resultType="String">
+        select sceen_local from model where num = #{num}
+    </select>
+    <select id="getModelNote" resultType="java.lang.String">
+        select note from model where num = #{num}
+    </select>
+    <select id="selectModelNumByNum" resultType="java.lang.String">
+        select model_num from model where num = #{modelId}
+    </select>
+
+    <update id="updateStatus">
+        update model set status = #{status} where num = #{num}
+    </update>
+
+    <update id="saveModelNote">
+        update model set note = #{note} where num = #{num}
+    </update>
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.mobile.mapper.OrderConstLogMapper">
+
+    <update id="saveFaConst">
+        update order_const_log set fa_const = #{faConst},fa_num = #{faNum} where order_num = #{orderNum}
+    </update>
+
+    <select id="getOrderFaConst" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.FaConst">
+        select fa_const AS faConst,fa_num AS faNum from order_const_log where order_num = #{orderNum}
+    </select>
+
+    <select id="selectLastCountByNum" resultType="java.util.HashMap">
+        select consts,kickback,sceen_const,units,order_note as orderNote from order_const_log where order_num like concat('%',#{num},'%') order by created_time desc limit 1
+    </select>
+
+    <select id="selectNewConst" resultType="java.lang.Double">
+        select consts from order_const_log where order_num like concat('%',#{num},'%') order by created_time desc limit 1
+    </select>
+
+    <select id="selectOrderPropList" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.OrderProp">
+        SELECT DISTINCT order_num from order_const_log where sceen_const = 0  and consts = 0
+    </select>
+    <select id="selectOrderPropListByOrders"
+            resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.OrderProp">
+        select order_num from orders where status = #{i} and last_const = 0
+    </select>
+    <select id="selectOrderPropListByOrdersConst"
+            resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.OrderProp">
+        select order_num from orders where model_id not
+in (SELECT DISTINCT order_num from order_const_log)
+    </select>
+</mapper>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.admin.mapper.AdminOrderRoleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.yinhua.admin.entity.OrderRole">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="type" property="type" />
+        <result column="isname" property="isname" />
+        <result column="shunxu" property="shunxu" />
+        <result column="parent_id" property="parentId" />
+        <result column="type_name" property="typeName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", name AS "name", type AS "type", isname AS "isname", shunxu AS "shunxu", parent_id AS "parentId", type_name AS "typeName"
+    </sql>
+
+    <update id="updateAll">
+        update order_role set type = #{param.type} where id = #{param.id}
+    </update>
+
+
+    <select id="customList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.OrderRoleResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderRoleParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_role where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.isname != null and paramCondition.isname != ''">
+                and isname like CONCAT('%',#{paramCondition.isname},'%')
+            </if>
+            <if test="paramCondition.shunxu != null and paramCondition.shunxu != ''">
+                and shunxu like CONCAT('%',#{paramCondition.shunxu},'%')
+            </if>
+            <if test="paramCondition.parentId != null and paramCondition.parentId != ''">
+                and parent_id like CONCAT('%',#{paramCondition.parentId},'%')
+            </if>
+            <if test="paramCondition.typeName != null and paramCondition.typeName != ''">
+                and type_name like CONCAT('%',#{paramCondition.typeName},'%')
+            </if>
+    </select>
+
+    <select id="customMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderRoleParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_role where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.isname != null and paramCondition.isname != ''">
+                and isname like CONCAT('%',#{paramCondition.isname},'%')
+            </if>
+            <if test="paramCondition.shunxu != null and paramCondition.shunxu != ''">
+                and shunxu like CONCAT('%',#{paramCondition.shunxu},'%')
+            </if>
+            <if test="paramCondition.parentId != null and paramCondition.parentId != ''">
+                and parent_id like CONCAT('%',#{paramCondition.parentId},'%')
+            </if>
+            <if test="paramCondition.typeName != null and paramCondition.typeName != ''">
+                and type_name like CONCAT('%',#{paramCondition.typeName},'%')
+            </if>
+    </select>
+
+    <select id="customPageList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.OrderRoleResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderRoleParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_role where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.shunxu != null and paramCondition.shunxu != ''">
+                and shunxu like CONCAT('%',#{paramCondition.shunxu},'%')
+            </if>
+            <if test="paramCondition.parentId != null and paramCondition.parentId != ''">
+                and parent_id like CONCAT('%',#{paramCondition.parentId},'%')
+            </if>
+            <if test="paramCondition.typeName != null and paramCondition.typeName != ''">
+                and type_name like CONCAT('%',#{paramCondition.typeName},'%')
+            </if>
+            <if test="paramCondition.condition != null and paramCondition.condition != ''">
+                and id like CONCAT('%',#{paramCondition.condition},'%')
+                or name like CONCAT('%',#{paramCondition.condition},'%')
+            </if>
+            <if test="flag != null">
+                and isname = 1 group by name
+            </if>
+            <if test="flag == null">
+                and isname = 0
+            </if>
+    </select>
+
+    <select id="customPageMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.OrderRoleParam">
+        select
+        <include refid="Base_Column_List"/>
+        from order_role where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.isname != null and paramCondition.isname != ''">
+                and isname like CONCAT('%',#{paramCondition.isname},'%')
+            </if>
+            <if test="paramCondition.shunxu != null and paramCondition.shunxu != ''">
+                and shunxu like CONCAT('%',#{paramCondition.shunxu},'%')
+            </if>
+            <if test="paramCondition.parentId != null and paramCondition.parentId != ''">
+                and parent_id like CONCAT('%',#{paramCondition.parentId},'%')
+            </if>
+            <if test="paramCondition.typeName != null and paramCondition.typeName != ''">
+                and type_name like CONCAT('%',#{paramCondition.typeName},'%')
+            </if>
+
+    </select>
+
+    <insert id="insertData">
+        insert into order_role (id,name,isname) values (#{id},#{name},#{isname})
+    </insert>
+</mapper>

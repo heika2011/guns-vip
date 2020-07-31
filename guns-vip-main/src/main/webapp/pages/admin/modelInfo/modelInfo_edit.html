@@ -1,0 +1,93 @@
+@layout("/common/_form.html",{js:["/assets/admin/modelInfo/modelInfo_edit.js"]}){
+
+<form class="layui-form" id="modelInfoForm" lay-filter="modelInfoForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">基本信息</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="id" type="hidden"/>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">款式id<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="num" name="num" placeholder="请输入款式id" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片颜色<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="color" name="color" placeholder="请输入裁片颜色" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片依据；1,，按文件，2，按纸样，3，按点位，4，按样衣<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="colorFrom" name="colorFrom" placeholder="请输入裁片依据；1,，按文件，2，按纸样，3，按点位，4，按样衣" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片大小<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="sizes" name="sizes" placeholder="请输入裁片大小" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片位置<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="places" name="places" placeholder="请输入裁片位置" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">工艺：1，手工，2，数码<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="craft" name="craft" placeholder="请输入工艺：1，手工，2，数码" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">有无拼缝：1，有 2，无<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="piece" name="piece" placeholder="请输入有无拼缝：1，有 2，无" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">创建时间<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="createdTime" name="createdTime" placeholder="请输入创建时间" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">修改时间<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="updateTime" name="updateTime" placeholder="请输入修改时间" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片名称<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="names" name="names" placeholder="请输入裁片名称" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">裁片单价<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="muchs" name="muchs" placeholder="请输入裁片单价" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">备注<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="note" name="note" placeholder="请输入备注" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

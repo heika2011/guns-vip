@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.admin.mapper.AdminTeamsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.yinhua.admin.entity.Teams">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="leader_id" property="leaderId" />
+        <result column="user_id" property="userId" />
+        <result column="vice_id" property="viceId" />
+        <result column="team_name" property="teamName" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", name AS "name", leader_id AS "leaderId", user_id AS "userId", vice_id AS "viceId", team_name AS "teamName",team_num AS "teamNum"
+    </sql>
+
+    <update id="updateAllTeamName">
+        update teams set team_name = #{name} where team_num = #{teamNum}
+    </update>
+    <update id="updateAllTeamNum">
+        update teams set team_num = #{newTeamNum} where team_num = #{oldTeamNum}
+    </update>
+    <update id="updateLeader">
+        update teams set ${name} = null where id = #{id}
+    </update>
+    <update id="updateLeaderForOther">
+        update teams set ${name} = #{id} where team_num = #{teamNum} and id != #{id}
+    </update>
+
+    <select id="customList" resultType="cn.stylefeng.guns.yinhua.admin.model.result.TeamsResult" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.TeamsParam">
+        select
+        <include refid="Base_Column_List"/>
+        from teams where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.leaderId != null and paramCondition.leaderId != ''">
+                and leader_id like CONCAT('%',#{paramCondition.leaderId},'%')
+            </if>
+            <if test="paramCondition.userId != null and paramCondition.userId != ''">
+                and user_id like CONCAT('%',#{paramCondition.userId},'%')
+            </if>
+            <if test="paramCondition.viceId != null and paramCondition.viceId != ''">
+                and vice_id like CONCAT('%',#{paramCondition.viceId},'%')
+            </if>
+            <if test="paramCondition.teamName != null and paramCondition.teamName != ''">
+                and team_name like CONCAT('%',#{paramCondition.teamName},'%')
+            </if>
+    </select>
+
+    <select id="customMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.TeamsParam">
+        select
+        <include refid="Base_Column_List"/>
+        from teams where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.leaderId != null and paramCondition.leaderId != ''">
+                and leader_id like CONCAT('%',#{paramCondition.leaderId},'%')
+            </if>
+            <if test="paramCondition.userId != null and paramCondition.userId != ''">
+                and user_id like CONCAT('%',#{paramCondition.userId},'%')
+            </if>
+            <if test="paramCondition.viceId != null and paramCondition.viceId != ''">
+                and vice_id like CONCAT('%',#{paramCondition.viceId},'%')
+            </if>
+            <if test="paramCondition.teamName != null and paramCondition.teamName != ''">
+                and team_name like CONCAT('%',#{paramCondition.teamName},'%')
+            </if>
+    </select>
+
+    <select id="selectTeamsByLeaderId" resultType="cn.stylefeng.guns.yinhua.admin.model.result.TeamsResult">
+        select * from teams where id = #{id} or leader_id = #{id}
+    </select>
+
+    <select id="selectPeople" resultType="cn.stylefeng.guns.yinhua.admin.model.params.AdminUserParam">
+        select user_id as userId,name from sys_user where user_id != 1
+    </select>
+
+    <select id="selectOneById" resultType="cn.stylefeng.guns.yinhua.admin.model.result.TeamsResult">
+        select * from teams where id = #{id}
+    </select>
+    <select id="selectNameById" resultType="string">
+        select name from teams where id = #{id}
+    </select>
+    <resultMap id="selectViceNameFromId" type="cn.stylefeng.guns.yinhua.admin.model.result.TeamsResult">
+        <id column="id" property="id"/>
+        <collection property="viceName"
+                    column="viceId"
+                    select="cn.stylefeng.guns.yinhua.admin.mapper.AdminTeamsMapper.selectNameById">
+        </collection>
+    </resultMap>
+    <select id="customPageList" resultMap="selectViceNameFromId" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.TeamsParam">
+        select
+        <include refid="Base_Column_List"/>
+        from teams where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            and leader_id is NULL
+            <if test="paramCondition.userId != null and paramCondition.userId != ''">
+                and user_id like CONCAT('%',#{paramCondition.userId},'%')
+            </if>
+            <if test="paramCondition.viceId != null and paramCondition.viceId != ''">
+                and vice_id like CONCAT('%',#{paramCondition.viceId},'%')
+            </if>
+            <if test="paramCondition.teamName != null and paramCondition.teamName != ''">
+                and team_name like CONCAT('%',#{paramCondition.teamName},'%')
+            </if>
+            <if test="paramCondition.condition != null and paramCondition.condition != ''">
+                and team_name like CONCAT('%',#{paramCondition.condition},'%')
+                or id like (select team_id from user_team_u where name like CONCAT('%',#{paramCondition.condition},'%'))
+            </if>
+    </select>
+
+    <select id="customPageMapList" resultType="map" parameterType="cn.stylefeng.guns.yinhua.admin.model.params.TeamsParam">
+        select
+        <include refid="Base_Column_List"/>
+        from teams where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.name != null and paramCondition.name != ''">
+                and name like CONCAT('%',#{paramCondition.name},'%')
+            </if>
+            <if test="paramCondition.leaderId != null and paramCondition.leaderId != ''">
+                and leader_id like CONCAT('%',#{paramCondition.leaderId},'%')
+            </if>
+            <if test="paramCondition.userId != null and paramCondition.userId != ''">
+                and user_id like CONCAT('%',#{paramCondition.userId},'%')
+            </if>
+            <if test="paramCondition.viceId != null and paramCondition.viceId != ''">
+                and vice_id like CONCAT('%',#{paramCondition.viceId},'%')
+            </if>
+            <if test="paramCondition.teamName != null and paramCondition.teamName != ''">
+                and team_name like CONCAT('%',#{paramCondition.teamName},'%')
+            </if>
+    </select>
+
+</mapper>

@@ -1,0 +1,33 @@
+@layout("/common/_form.html",{js:["/assets/admin/config/jump.js"]}){
+
+<div style="padding: 20px; background-color: #F2F2F2;">
+    <div class="layui-row layui-col-space15">
+        @if(user != null){
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-header" style="color: red;">请从下列选择进入</div>
+                </div>
+            </div>
+            @for(u in user){
+            @if(u.icon != null && u.icon != ""){
+            <a href="${url}/#/?jumpOrderNum=${orderNum}&type=${u.icon}&token=${token}"><div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        ${u.name}
+                    </div>
+                </div>
+            </div></a>
+            @}
+            @}
+        @}
+        @if(user == null){
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header" style="color: red;">该订单已被删除</div>
+            </div>
+        </div>
+        @}
+    </div>
+</div>
+
+@}

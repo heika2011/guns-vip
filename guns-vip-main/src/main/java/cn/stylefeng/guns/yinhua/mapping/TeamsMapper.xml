@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.mobile.mapper.TeamsMapper">
+
+    <select id="selectStatisCount" resultType="java.util.Map">
+        select
+        count(distinct a.order_num) allcount,
+        b.order_type order_num,
+        (case when c.name like '%丝网%' then '丝印部'
+            when c.name like '%数码%' then '数码部'
+            when c.name like '%激光%' then '激光部'
+            when c.name like '%移膜%' then '移膜部'
+            else c.name
+            end
+        ) name,
+        1 type,
+        (case when c.name like '%丝网%' then '1.jpg'
+            when c.name like '%数码%' then '2.jpg'
+            when c.name like '%激光%' then '3.jpg'
+            when c.name like '%移膜%' then '4.jpg'
+            when c.name like '%外发%' then '5.jpg'
+            else '213125.png'
+            end
+        ) url
+        from order_prop as a
+        left join orders as b on a.order_num = b.order_num
+        left join order_role as c on b.order_type =  c.id
+        where a.do_over = 0 and b.status != 6
+        group by b.order_type,c.num
+    </select>
+    <select id="getDataByTypes" resultType="java.util.Map">
+        select
+        a.order_num order_num,
+        count(a.order_num) counts,
+        a.model_id modelId,
+        d.name name,
+        substring_index((select  group_concat(n.url) from model_info m,model_image n where m.num = a.model_id and m.id = n.modelinfo_id),',',1) url,
+        (select group_concat(do_over) from order_prop where order_num = a.order_num) progress,
+        concat(a.allcount,a.units) allcount,
+        ${flag} type
+        from orders as a
+        left join order_role as c on a.order_type =  c.id
+        left join model as d on d.num = a.model_id
+        left join customer as e on a.customer_name = e.num
+        <if test="flag == 2">
+            where (select count(*) from order_prop where order_num = a.order_num and do_over = 0) > 0  and a.order_type = #{type}
+            <if test="keyWord!=null and keyWord  != ''">
+                and
+                (
+                a.order_num like '%${keyWord}%'
+                or a.customer_name like '%${keyWord}%'
+                or d.name like '%${keyWord}%'
+                or d.num like '%${keyWord}%'
+                or e.name like '%${keyWord}%'
+                or d.model_num like '%${keyWord}%'
+                )
+            </if>
+            <if test="progress == 1">
+                and (a.order_progress between 0 and 5
+                or a.order_progress = 14)
+            </if>
+            <if test="progress == 2">
+                and a.order_progress between 5 and 7
+            </if>
+            <if test="progress == 3">
+                and a.order_progress between 8 and 13
+            </if>
+            <if test="sort &lt; 5">
+                and a.status != 6
+            </if>
+            <if test="sort == 5">
+                and a.status = 6
+            </if>
+            group by a.order_num
+            <if test="sort == null or sort == ''">
+                order by a.created_time asc
+            </if>
+            <if test="sort == 1">
+                order by a.created_time desc
+            </if>
+            <if test="sort == 2">
+                order by a.customer_name desc
+            </if>
+            <if test="sort == 3">
+                order by a.customer_name asc
+            </if>
+            <if test="sort == 4">
+                order by a.allcount desc
+            </if>
+        </if>
+    </select>
+    <select id="getOrderInfo" resultType="java.util.Map">
+        select
+        (case (select see from sys_user where user_id = #{userId})
+        when  1 then c.name
+        when 0 then c.num
+        end
+        ) customer ,a.order_num, b.name,b.model_num,a.order_progress,a.created_time,d.name typename
+        ,(select group_concat(type_name,'|',name,'|',do_over) from order_prop where order_num = a.order_num) order_prop
+        from orders a
+        left join model b on b.num = a.model_id
+        left join customer c on c.num =  a.customer_name
+        left join order_role d on  d.id = a.order_type
+        where order_num = #{orderNum}
+    </select>
+
+    <select id="getTypeDataCount" resultType="java.util.Map">
+        select
+				ifnull(count(case when a.order_progress between 0 and 5 or a.order_progress = 14 then a.order_num end),0) type1,
+				ifnull(count(case when a.order_progress between 6 and 7 then a.order_num end),0) type2 ,
+				ifnull(count(case when a.order_progress between 8 and 13 then a.order_num end),0) type3
+
+        from orders as a
+        where (select count(*) from order_prop where order_num = a.order_num and do_over = 0) > 0
+				and a.order_type = #{type}
+    </select>
+</mapper>

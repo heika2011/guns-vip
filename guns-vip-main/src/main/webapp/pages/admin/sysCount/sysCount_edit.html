@@ -1,0 +1,101 @@
+@layout("/common/_form.html",{js:["/assets/admin/sysCount/sysCount_edit.js"]}){
+
+<form class="layui-form" id="sysCountForm" lay-filter="sysCountForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">分成比例</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="id" type="hidden"/>
+                    <div class="layui-inline layui-col-xs3">
+                        <label class="layui-form-label">人均产值</label>
+                        <div class="layui-input-block">
+                            <input id="value0" value="${count[0].value}" name="value0" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-row">
+                    <div class="layui-inline layui-col-xs3">
+                        <label class="layui-form-label">第一阶梯</label>
+                        <div class="layui-input-block">
+                            <input id="value1"  value="${count[1].value}" name="value1" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-xs3">
+                        <label class="layui-form-label">超额提成</label>
+                        <div class="layui-input-block">
+                            <input id="value2"  value="${count[2].value}" name="value2" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />%
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-row">
+                    <div class="layui-inline layui-col-xs3">
+                        <label class="layui-form-label">第二阶梯</label>
+                        <div class="layui-input-block">
+                            <input id="value3"  value="${count[3].value}" name="value3" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-xs3">
+                        <label class="layui-form-label">超额提成</label>
+                        <div class="layui-input-block">
+                            <input id="value4"  value="${count[4].value}" name="value4" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />%
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-row">
+                    <div class="layui-inline layui-col-xs3">
+                        <label class="layui-form-label">第三阶梯</label>
+                        <div class="layui-input-block">
+                            <input id="value5"  value="${count[5].value}" name="value5" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-xs3">
+                        <label class="layui-form-label">超额提成</label>
+                        <div class="layui-input-block">
+                            <input id="value6" value="${count[6].value}" name="value6" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="layui-card-header">每人比例</div>
+                <div class="layui-card-body">
+                    <div class="layui-form-item">
+                        <div class="layui-inline layui-col-md5">
+                            <label class="layui-form-label">组长管理费</label>
+                            <div class="layui-input-block">
+                                <input id="value7" value="${count[7].value}" name="value7" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />%
+                            </div>
+                            <label class="layui-form-label layui-layout-right">每组都拿</label>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline layui-col-md5">
+                            <label class="layui-form-label">刮板工总额</label>
+                            <div class="layui-input-block">
+                                <input id="value8" value="${count[8].value}" name="value8" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />%
+                            </div>
+                            <label class="layui-form-label layui-layout-right">按人平均分</label>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-inline layui-col-md5">
+                            <label class="layui-form-label">普通总额</label>
+                            <div class="layui-input-block">
+                                <input id="value9" value="${count[9].value}" name="value9" placeholder="请输入金额" type="number" class="layui-input" lay-verify="" />%
+                            </div>
+                            <label class="layui-form-label layui-layout-right">按人平均分</label>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

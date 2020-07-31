@@ -1,0 +1,51 @@
+@layout("/common/_form.html",{js:["/assets/admin/sysMessage/sysMessage_add.js"]}){
+
+<form class="layui-form" id="sysMessageForm" lay-filter="sysMessageForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">基本信息</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="id" type="hidden"/>
+                    <div class="layui-inline layui-col-md12" id="role">
+                        <label class="layui-form-label">通知角色</label>
+                        <div class="layui-input-block">
+                            <input type="checkbox" lay-filter="checkAllForRole" id="checkAllForRole" name="checkAllForRole" title="全部">
+                            @for(u in role){
+                            <input type="checkbox" value="R${u.roleId}" name="role" title="${u.name}">
+                            @}
+                        </div>
+
+                    </div>
+                    <div class="layui-inline layui-col-md12" id="people">
+                        <label class="layui-form-label">通知功能</label>
+                        <div class="layui-input-block">
+                            <input type="checkbox" lay-filter="checkAllForUser" id="checkAllForUser"  name="checkAllForUser" title="全部">
+                            @for(r in menu){
+                            <input type="checkbox" value="M${r.id}" name="user" title="${r.name}">
+                            @}
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <t>模板内容：请注意逗号要为中文逗号<br>
+                            {MODELNUM} 款号 {NUM} 款式编号 {NAME} 款式名称 {TYPE} 订单类型 {SUM} 数量 {UNITS} 单位<br>
+                            {USER} 发起人名字 {TIME} 操作时间 {PROP} 进度 <br>注意：第一行默认是标题行</t>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">消息模板</label>
+                        <div class="layui-input-block">
+                            <textarea placeholder="请输入自定义消息" class="layui-textarea" name="desc"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

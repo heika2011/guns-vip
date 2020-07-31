@@ -1,0 +1,40 @@
+@layout("/common/_container.html",{js:["/assets/admin/printLog/printLog.js"]}){
+
+<div class="layui-body-header">
+    <span class="layui-body-header-title">自动打印</span>
+</div>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm12 layui-col-md12 layui-col-lg12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-form toolbar">
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <input id="condition" class="layui-input" type="text" placeholder="名称"/>
+                            </div>
+                            <div class="layui-inline">
+                                <button id="btnSearch" class="layui-btn icon-btn"><i class="layui-icon">&#xe615;</i>搜索</button>
+                                <button id="btnExp" class="layui-btn icon-btn"><i class="layui-icon">&#xe67d;</i>导出</button>
+                                <a class="layui-btn layui-btn-danger" href="/printLog/removeAll"><i class="layui-icon">&#xe67d;</i>清空日志</a>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">自动打印开关</label>
+                                <div class="layui-input-block">
+                                    <input type="checkbox" ${auto?'checked':''} name="open" lay-skin="switch" lay-filter="switchTest" lay-text="ON|OFF">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="layui-table" id="printLogTable" lay-filter="printLogTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tableBar">
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delete">删除</a>
+</script>
+@}

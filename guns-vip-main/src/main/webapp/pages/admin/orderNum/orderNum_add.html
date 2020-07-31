@@ -1,0 +1,81 @@
+@layout("/common/_form.html",{js:["/assets/admin/orderNum/orderNum_add.js"]}){
+
+<form class="layui-form" id="orderNumForm" lay-filter="orderNumForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">基本信息</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="" type="hidden"/>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">款式id<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="num" name="num" placeholder="请输入款式id" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">生产单编号<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="orderNum" name="orderNum" placeholder="请输入生产单编号" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">颜色<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="color" name="color" placeholder="请输入颜色" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">数量<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="sum" name="sum" placeholder="请输入数量" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">单位<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="units" name="units" placeholder="请输入单位" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">实裁数<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="realyCut" name="realyCut" placeholder="请输入实裁数" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">实点数<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="realyPoint" name="realyPoint" placeholder="请输入实点数" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">坏布<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="badLinling" name="badLinling" placeholder="请输入坏布" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">印坏<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="badF" name="badF" placeholder="请输入印坏" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">出库时间<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="outTime" name="outTime" placeholder="请输入出库时间" type="text" class="layui-input" lay-verify="required" required/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}

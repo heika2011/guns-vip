@@ -1,0 +1,62 @@
+@layout("/common/_container.html",{js:["/assets/admin/orders/orders.js"]}){
+
+<div class="layui-body-header">
+    <span class="layui-body-header-title">款式管理</span>
+</div>
+<form class="layui-form">
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm12 layui-col-md12 layui-col-lg12">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="layui-form toolbar">
+                        <div class="layui-form-item">
+                            <div class="layui-inline  layui-col-xs4">
+                                <input id="condition" class="layui-input" type="text" placeholder="客户、款号、生产单编号、名称"/>
+
+                            </div>
+                            <div class="layui-inline">
+                                <a id="btnSearch" class="layui-btn icon-btn"><i class="layui-icon">&#xe615;</i>搜索</a>
+                                <a id="btnExp" class="layui-btn icon-btn"><i class="layui-icon">&#xe67d;</i>导出</a>
+
+                                <div class="layui-input-inline">
+                                    <select id="orderProgress" lay-filter="orderProgress" name="orderProgress">
+                                        <option value="">直接选择或搜索选择</option>
+                                        <option value="0" selected="">未下单</option>
+                                        <option value="1">开发</option>
+                                        <option value="2">首样</option>
+                                        <option value="3">改版</option>
+                                        <option value="4">翻样</option>
+                                        <option value="5">产前样</option>
+                                        <option value="6">首单</option>
+                                        <option value="7">翻单</option>
+                                        <option value="8">补片（打样）</option>
+                                        <option value="9">补片（大货）</option>
+                                        <option value="10">返工（打样）</option>
+                                        <option value="11">返工（大货）</option>
+                                        <option value="12">重做（打样）</option>
+                                        <option value="13">重做（大货）</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <table class="layui-table" id="ordersTable" lay-filter="ordersTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<script type="text/html" id="out">
+    <div class="layui-btn-container">
+        <button class="layui-btn layui-btn-sm" lay-event="getCheckData">打印生产单</button>
+        <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">打印工艺单</button>
+    </div>
+</script>
+<script type="text/html" id="tableBar">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="edit">查看</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="delete">删除</a>
+</script>
+@}

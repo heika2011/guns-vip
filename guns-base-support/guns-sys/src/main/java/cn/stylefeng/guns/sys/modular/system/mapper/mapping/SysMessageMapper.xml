@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.sys.modular.system.mapper.SysMessageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.stylefeng.guns.sys.modular.system.model.entity.SysMessage">
+        <id column="id" property="id" />
+        <result column="type" property="type" />
+        <result column="to_job" property="toJob" />
+        <result column="to_name" property="toName" />
+        <result column="created_time" property="createdTime" />
+        <result column="msg" property="msg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", type AS "type", to_job AS "toJob", to_name AS "toName", created_time AS "createdTime", msg AS "msg"
+    </sql>
+
+
+    <select id="customList" resultType="cn.stylefeng.guns.sys.modular.system.model.result.SysMessageResult" parameterType="cn.stylefeng.guns.sys.modular.system.model.params.SysMessageParam">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_message where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.toJob != null and paramCondition.toJob != ''">
+                and to_job like CONCAT('%',#{paramCondition.toJob},'%')
+            </if>
+            <if test="paramCondition.toName != null and paramCondition.toName != ''">
+                and to_name like CONCAT('%',#{paramCondition.toName},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.msg != null and paramCondition.msg != ''">
+                and msg like CONCAT('%',#{paramCondition.msg},'%')
+            </if>
+    </select>
+
+    <select id="customMapList" resultType="map" parameterType="cn.stylefeng.guns.sys.modular.system.model.params.SysMessageParam">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_message where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.toJob != null and paramCondition.toJob != ''">
+                and to_job like CONCAT('%',#{paramCondition.toJob},'%')
+            </if>
+            <if test="paramCondition.toName != null and paramCondition.toName != ''">
+                and to_name like CONCAT('%',#{paramCondition.toName},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.msg != null and paramCondition.msg != ''">
+                and msg like CONCAT('%',#{paramCondition.msg},'%')
+            </if>
+    </select>
+
+    <resultMap id="selectAll" type="cn.stylefeng.guns.sys.modular.system.model.result.SysMessageResult">
+        <id column="id" property="id"/>
+        <collection property="name"
+                    column="toJob"
+                    select="cn.stylefeng.guns.sys.modular.system.mapper.RoleMapper.selectName">
+
+        </collection>
+        <collection property="userName"
+                    column="toName"
+                    select="cn.stylefeng.guns.sys.modular.system.mapper.UserMapper.selectUserName">
+
+        </collection>
+    </resultMap>
+
+
+    <select id="customPageList" resultMap="selectAll" parameterType="cn.stylefeng.guns.sys.modular.system.model.params.SysMessageParam">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_message where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.toJob != null and paramCondition.toJob != ''">
+                and to_job like CONCAT('%',#{paramCondition.toJob},'%')
+            </if>
+            <if test="paramCondition.toName != null and paramCondition.toName != ''">
+                and to_name like CONCAT('%',#{paramCondition.toName},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.msg != null and paramCondition.msg != ''">
+                and msg like CONCAT('%',#{paramCondition.msg},'%')
+            </if>
+            <if test="paramCondition.condition != null and paramCondition.condition != ''">
+                and type like CONCAT('%',#{paramCondition.condition},'%')
+                or to_job like CONCAT('%',#{paramCondition.condition},'%')
+                or to_name like CONCAT('%',#{paramCondition.condition},'%')
+            </if>
+
+
+    </select>
+
+    <select id="customPageMapList" resultType="map" parameterType="cn.stylefeng.guns.sys.modular.system.model.params.SysMessageParam">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_message where 1 = 1
+            <if test="paramCondition.id != null and paramCondition.id != ''">
+                and id like CONCAT('%',#{paramCondition.id},'%')
+            </if>
+            <if test="paramCondition.type != null and paramCondition.type != ''">
+                and type like CONCAT('%',#{paramCondition.type},'%')
+            </if>
+            <if test="paramCondition.toJob != null and paramCondition.toJob != ''">
+                and to_job like CONCAT('%',#{paramCondition.toJob},'%')
+            </if>
+            <if test="paramCondition.toName != null and paramCondition.toName != ''">
+                and to_name like CONCAT('%',#{paramCondition.toName},'%')
+            </if>
+            <if test="paramCondition.createdTime != null and paramCondition.createdTime != ''">
+                and created_time like CONCAT('%',#{paramCondition.createdTime},'%')
+            </if>
+            <if test="paramCondition.msg != null and paramCondition.msg != ''">
+                and msg like CONCAT('%',#{paramCondition.msg},'%')
+            </if>
+    </select>
+
+</mapper>

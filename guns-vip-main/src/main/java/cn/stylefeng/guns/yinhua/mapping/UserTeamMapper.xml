@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.mobile.mapper.UserTeamMapper">
+
+
+    <resultMap id="selectLeaderAndVice" type="cn.stylefeng.guns.yinhua.entity.yinhua.team.UserTeam">
+        <id property="id" column="id"/>
+        <collection property="leader"
+                    column="id"
+                    select="cn.stylefeng.guns.yinhua.mobile.mapper.UserTeamMapper.selectLeaderName"
+        >
+        </collection>
+    </resultMap>
+    <select id="selectAllTeam" parameterType="String" resultMap="selectLeaderAndVice">
+        select * from user_team where 1 = 1
+        <if test="condition!=null and condition!=''">
+            and name like CONCAT('%',#{condition},'%')
+            or id like (select team_id from user_team_u where name like CONCAT('%',#{condition},'%') limit 1)
+        </if>
+    </select>
+
+    <select id="selectLeaderName" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.team.TeamJob">
+        select name as name,job as type from user_team_u where team_id = #{id} and( job = 1 or job = 2)
+    </select>
+
+    <select id="ourTeamOrder" resultType="String">
+        select order_num from order_team where team_id = #{teamId}
+        and (select rea_time from orders where order_num = order_team.order_num)
+        between #{startTime} and #{overTime} GROUP BY order_num
+    </select>
+
+    <select id="selectUser" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.team.UserTeamU">
+        select * from user_team_u where team_id = #{id}
+    </select>
+
+    <insert id="insertTeamLog" parameterType="cn.stylefeng.guns.yinhua.entity.yinhua.order.OrderTeamLog">
+        insert into order_team_log (team,over_time)
+        values (#{orderTeamLog.team},#{orderTeamLog.overTime})
+    </insert>
+
+    <select id="findOrderConst" resultType="String">
+        select order_const from order_team_log where team = #{teamId} and to_days(over_time) = to_days(now())
+    </select>
+
+    <select id="findOrderConstByOrderNum" resultType="String">
+        select order_const from order_team_log where team = #{teamId} and to_days(over_time) = to_days((select rea_time from orders where order_num = #{orderNum}))
+    </select>
+
+    <update id="updateOrderTeamLog">
+        update order_team_log set order_const = #{orderConst} where team = #{teamId} and to_days(over_time) = to_days((select rea_time from orders where order_num = #{orderNum}))
+    </update>
+
+    <select id="findOrderConstByTime" resultType="String">
+        select order_const from order_team_log where team in (${teamId}) and over_time between #{startTime} and #{overTime}
+    </select>
+
+    <select id="findOrderTypeForUserId" resultType="String">
+        select GROUP_CONCAT(type) from order_team
+        where order_num in
+        (select order_num from orders where rea_time
+        between #{startTime} and #{overTime})
+        and team_id in (${teamId}) and user_id = #{userId} and sure_flag = 1
+    </select>
+
+    <select id="selectTeamData" resultType="String">
+        select order_num from order_team where team_id = #{teamId}
+        and (select overFlag from orders where order_num = order_team.order_num and rea_time is null) = 0
+        GROUP BY order_num
+    </select>
+
+    <select id="selectRoleByName" resultType="Long">
+        select role_id from sys_role where name like concat('%',#{name},'%')
+    </select>
+
+    <select id="selectUserHaveRole" resultType="String">
+        select role_id from sys_user where user_id = #{userId} and role_id like concat('%',#{roleId},'%')
+    </select>
+
+    <update id="updateUserForRole">
+        update sys_user set role_id = (
+        case
+        when role_id is null or role_id = '' then #{roleId}
+        when #{flag} = true then #{roleId}
+        when role_id is not null then concat(concat(role_id,','),#{roleId})
+        end
+        ) where user_id = #{userId}
+    </update>
+
+    <select id="selectOrderPropByName" resultType="String">
+        select isname from order_role where id=#{id} and name like concat('%',#{name},'%')
+    </select>
+
+    <select id="selectTeamId" resultType="java.lang.String">
+        select group_concat(team_id) from user_team_u where user_id = #{userId}
+    </select>
+</mapper>

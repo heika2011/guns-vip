@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打印</title>
+</head>
+<body>
+<iframe id="myFrame" name="myFrame" src="http://localhost/orders/getOrderOut?num=200503172003-0"></iframe>
+</body>
+<script type="text/javascript" src="${ctxPath}/assets/common/libs/jquery/jquery-3.2.1.min.js?v=${constants.getReleaseVersion()}"></script>
+<script>
+    $(function () {
+        document.getElementById("myFrame").contentWindow.report1_flashPrint();
+    })
+</script>
+</html>

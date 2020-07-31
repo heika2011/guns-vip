@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.stylefeng.guns.yinhua.mobile.mapper.OrderMapper">
+
+    <select id="getCreateData" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeA,
+        (select count(*) from orders where order_progress=2 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeB,
+        (select count(*) from orders where order_progress=3 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeC,
+        (select count(*) from orders where order_progress=4 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeD,
+        (select count(*) from orders where order_progress=5 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeE,
+        (select count(*) from orders where order_progress=6 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeF,
+        (select count(*) from orders where order_progress=7 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeH,
+        (select count(*) from orders where order_progress=50 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeM,
+        (select count(*) from orders where order_progress=51 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeN,
+        (select count(*) from orders where order_progress=8 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeI,
+        (select count(*) from orders where order_progress=9 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeJ,
+        (select count(*) from orders where order_progress=10 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeK,
+        (select count(*) from orders where order_progress=0 and status != 6 and overFlag = 0 and name_id = #{userId}) as typeL,
+        (select count(*) from orders where status = 6  and overFlag = 0 and name_id = #{userId}) as typeO
+        from orders where order_progress=1 and status != 6 and overFlag = 0 and name_id = #{userId}
+    </select>
+
+    <select id="getPMData" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeA,
+        (select count(*) from orders where urag > 0 and overFlag = 0 and order_num in (select order_num from order_prop where type = #{px} and do_over = 0)) as typeB,
+        (select count(*) from order_prop where type = #{px} and do_over = '0' and (select overFlag from orders where order_num = order_prop.order_num) = 0) as typeC,
+        (select count(*) from order_user where to_days(created_time) = to_days(NOW()) and user_id = #{userid} and type = 2) as typeD
+        from order_prop where type = #{px} and do_over = 0 and (select overFlag from orders where order_num = order_prop.order_num) = 0
+    </select>
+
+    <select id="getPDData" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeA,
+        (select count(*) from order_prop where type = #{px} and do_over = '1' and (select overFlag from orders where order_num = order_prop.order_num) = 0) as typeB,
+        (select count(*) from order_prop where type = #{px} and do_over = '0' and (select overFlag from orders where order_num = order_prop.order_num) = 0) as typeC
+        from order_prop where type =#{px} and do_over = 0 and (select overFlag from orders where order_num = order_prop.order_num) = 0
+    </select>
+
+    <select id="getSPata" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+            select count(*) as typeA,
+            (select count(*) from orders where order_prog = '1' and overFlag = 0 and order_num in (select order_num from order_prop where type = #{px} and do_over = 0) ) as typeB,
+            (select count(*) from orders where order_prog = '3' or order_prog = '2' and overFlag = 0 and order_num in (select order_num from order_prop where type = #{px} and do_over = 0)) as typeC,
+            (select count(*) from orders where urag>0 and order_num in (select order_num from order_prop where type = #{px} and do_over = 0) and overFlag = 0) as typeD,
+            (select count(*) from orders where hav_sheet=0 and order_num in (select order_num from order_prop where type = #{px} and do_over = 0) and overFlag = 0) as typeE,
+            (select count(*) from order_user where user_id =#{userid} and type = 20 and to_days(created_time) = to_days(NOW())) as typeI,
+            (select count(*) from order_user where user_id =#{userid} and type = 22 and to_days(created_time) = to_days(NOW())) as typeJ
+            from order_prop where type = #{px} and do_over = 0 and (select overFlag from orders where order_num = order_prop.order_num) = 0
+    </select>
+    <select id="selectForFPDY" resultType="String">
+        select order_num from orders
+        where
+        (select do_over from order_prop where type = #{px} and order_num = orders.order_num and
+			(select role_id from sys_user where user_id = #{userId} ) like concat('%',order_prop.sx,'%')
+			) = #{type} and overFlag = 0
+    </select>
+
+    <select id="selectForDY" resultType="String">
+        select order_num from orders
+        where
+        (select do_over from order_prop where type = #{px} and order_num = orders.order_num and
+			(select role_id from sys_user where user_id = #{userId} ) like concat('%',order_prop.sx,'%')
+			) = #{type} and overFlag = 0
+			and (select team_id from order_team where user_id = #{userId} and type is null and order_num = orders.order_num)
+			= (select team_id from user_team_u where user_id = #{userId})
+    </select>
+    <select id="selectMyOrderForSP" resultType="String">
+        select order_num from orders
+        where order_prog = #{type}
+        and (select do_over from order_prop where type = #{px} and order_num = orders.order_num) = 0 and overFlag = 0
+    </select>
+    <select id="getDCDate" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+            select count(*) as typeA,
+            (select count(*) from orders where urag>0 and overFlag=0 and order_num in (select order_num from order_prop where type = #{px} and do_over = 0)) as typeB,
+            (select count(*) from order_user where user_id = #{userid} and type = 30 and to_days(created_time) = to_days(now())) as typeD
+            from order_prop where type =#{px} and do_over = 0
+    </select>
+
+    <select id="getPCDate" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+            select count(*) as typeD,
+            (select count(*) from order_user where user_id = #{userid} and type =5 and to_days(created_time) = to_days(now())) as typeE
+            from orders where urag > 0 and overFlag = 0 and order_num in (select order_num from order_team where user_id = #{userid} and team_id = (select team_id from user_team_u where user_id = #{userid}) and type is null and order_num = orders.order_num)
+    </select>
+
+
+
+
+    <select id="selectTeamLearData" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeF
+        from orders
+        where order_num in (select order_num from order_team where team_id in  (select team_id from user_team_u where user_id = #{userId}) group by team_id) and to_days(rea_time) = to_days(now())
+    </select>
+
+
+    <select id="getPDCDate" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+            select count(*) as typeA,
+            (select count(*) from orders where overFlag = 0 and order_num in (select order_num from order_prop where type = #{px} and do_over=1 and(select role_id from sys_user where user_id = #{userId} ) like concat('%',order_prop.sx,'%')) ) as typeB,
+            (select count(*) from orders where overFlag = 0 and order_num in (select order_num from order_prop where type = '1234731218520522753' and do_over=0 and (select role_id from sys_user where user_id = #{userId} ) like concat('%',order_prop.sx,'%')) ) as typeC
+            from orders
+            where (select do_over from order_prop where type = #{px} and order_num = orders.order_num and (select role_id from sys_user where user_id = #{userId} ) like concat('%',order_prop.sx,'%')) = 0
+            and overFlag=0
+    </select>
+
+    <select id="setOverFlag" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+            update orders set status = #{status} where order_num=#{orderNum}
+    </select>
+
+    <select id="getBJDate" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(DISTINCT model_id) as typeC,
+        (select count(*) from  order_prop where type = #{px} and do_over = 0) as typeB,
+        (select count(*) from  order_prop where type = #{px} and do_over = 0) as typeA,
+        (select count(*) from  order_prop as c where type = #{px} and do_over = 0 and
+        (select do_over from  order_prop where order_num = c.order_num and type = '1234731218520522753' ) = 1
+        ) as typeD,
+        (select count(*) from  order_prop as c where type = #{px} and do_over = 0 and
+        (select do_over from  order_prop where order_num = c.order_num and type = '1234731218520522753' ) = 0
+        ) as typeE,
+        (select count(DISTINCT order_num) from order_const_log where sceen_const = 0  and consts = 0) as typeF,
+        (select count(*) from orders where status = 6 and last_const = 0) as typeO,
+        (select count(*) from orders where status = 5 and last_const = 0) as typeH,
+        (select count(*) from orders where model_id not in (SELECT DISTINCT order_num from order_const_log)) as typeJ
+        from orders where last_const != 0 and (select to_days(created_time) from order_const_log where order_num like concat('%',orders.model_id,'%') order by created_time desc limit 1) - to_days(now()) &lt; 7
+    </select>
+
+    <select id="getCWDate" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeC,
+        (select count(*) from  orders where (select consts from order_const_log where order_num like concat('%',orders.model_id,'%') order by created_time desc limit 1) is null and overFlag = 0  and status &lt; 4) as typeB,
+        (select count(*) from  orders where last_const >= 0 and overFlag = 0  and status &lt; 4) as typeA,
+        (select count(*) from  orders where status = 6 and overFlag = 0  ) as typeD,
+        (select count(*) from  orders where status = 5 and overFlag = 0  ) as typeE
+        from orders where (select consts from order_const_log where order_num like concat('%',orders.model_id,'%') order by created_time desc limit 1) >= 0  and overFlag = 0 and status &lt; 4
+    </select>
+    <select id="selectZT" resultType="java.lang.Long">
+        SELECT count(*) FROM order_user WHERE TO_DAYS(NOW( )) - TO_DAYS( created_time) = 1 and type in ${type} and user_id = #{userId}
+    </select>
+    <select id="selectMonth" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.OrderUser">
+        SELECT * FROM order_user WHERE MONTH(now())  = #{timer} and user_id = #{userId} and type in ${type}
+    </select>
+
+    <select id="selectUserId" resultType="String">
+        select account from sys_user
+        where role_id like CONCAT('%',#{user},'%')
+    </select>
+    <resultMap id="selectUserIdByRoleId" type="cn.stylefeng.guns.yinhua.admin.model.params.AdminUserParam">
+        <collection property="userIds"
+                    column="role_id"
+                    select="cn.stylefeng.guns.yinhua.mobile.mapper.OrderMapper.selectUserId">
+        </collection>
+    </resultMap>
+
+    <select id="selectRoleIdByMenuId" resultMap="selectUserIdByRoleId">
+        select role_id from sys_relation where menu_id = #{menuId}
+    </select>
+
+    <select id="selectOrderNumCount" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.rest.RestOrderNumCount">
+             select *,sum(out_sum) as count,
+             (select model_name from orders
+             where order_num = order_num_log.order_num) as names
+             from order_num_log
+             where to_days(created_time) = to_days(now()) and team_id in (${teamId})
+             GROUP BY order_num
+    </select>
+    <select id="selectOrderNumCountByTime" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.rest.RestOrderNumCount">
+             select *,sum(out_sum) as count,
+             (select model_name from orders
+             where order_num = order_num_log.order_num) as names
+             from order_num_log
+             where team_id in (${teamId}) and created_time BETWEEN #{startTime} and #{overTime}
+             GROUP BY order_num
+    </select>
+    <select id="selectHaveMakeUp" resultType="String">
+        select order_num from order_const_log where make_up > 0 and created_time between #{startTime} and #{overTime}
+    </select>
+
+
+
+    <select id="selectForPMC" resultType="String">
+        select order_num from order_prop where type = #{px} and do_over = 0
+    </select>
+
+    <select id="uragForPeople" resultType="String">
+        select type from order_prop where do_over = 0 and order_num =#{orderNum}
+    </select>
+
+    <update id="updateExpress" parameterType="cn.stylefeng.guns.yinhua.entity.yinhua.Express">
+        update orders set express_name = #{express.expressName},express_num = #{express.expressNum} where order_num = #{express.orderNum}
+    </update>
+    <select id="getExpressInfo" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.Express">
+        select express_name as expressName,express_num as expressNum from orders where order_num = #{orderNum}
+    </select>
+    <update id="overOrder">
+        update orders set overFlag = 1 where order_num = #{orderNum}
+    </update>
+    <!-- 结束分派 -->
+    <update id="overFp">
+        update orders set over_fp = 1 where order_num = #{orderNum}
+    </update>
+    <select id="findCustomerByNum" resultType="String">
+        select name from customer where num = #{num}
+    </select>
+    <resultMap id="selectOrderAll" type="cn.stylefeng.guns.yinhua.entity.yinhua.order.Order">
+        <id column="id" property="id"/>
+        <result column="model_id" property="modelId"/>
+        <collection property="modelName"
+                         column="model_id"
+                         select="cn.stylefeng.guns.yinhua.mobile.mapper.ModelMapper.selectNameByNum"
+        >
+        </collection>
+        <discriminator javaType="string" column="see">
+            <case value="1">
+                <collection property="customerName"
+                            column="customer_name"
+                            select="cn.stylefeng.guns.yinhua.mobile.mapper.OrderMapper.findCustomerByNum"
+                >
+                </collection>
+            </case>
+        </discriminator>
+    </resultMap>
+    <select id="selectOrderByNum" resultMap="selectOrderAll">
+        select *,(select see from sys_user where user_id = #{userId}) as see from orders where order_num = #{orderNum}
+    </select>
+    <select id="selectMyPage" resultMap="selectOrderAll">
+        select *,(select see from sys_user where user_id = #{userId}) as see from orders
+        <where>
+            <if test="keyWord != null and keyWord != ''">
+                (select name from customer where num = orders.customer_name) like concat('%',#{keyWord},'%') or
+                (select model_num from model where num = orders.model_id) like concat('%',#{keyWord},'%') or
+            </if>
+            ${ew.sqlSegment}
+        </where>
+    </select>
+    <select id="selectCWMyPage" resultMap="selectOrderAll">
+        select *,(select concat(consts,',',sceen_const) from order_const_log where order_num like concat(orders.model_id,'%') order by created_time desc limit 1) as consts,(select see from sys_user where user_id = #{userId}) as see from orders
+        <where>
+            <if test="keyWord != null and keyWord != ''">
+                (
+                order_num like concat('%',#{keyWord},'%')
+                or model_name like concat('%',#{keyWord},'%')
+                or model_id like concat('%',#{keyWord},'%')
+                or (select name from customer where num = orders.customer_name) like concat('%',#{keyWord},'%')
+                or (select model_num from model where num = orders.model_id) like concat('%',#{keyWord},'%')
+                ) and
+            </if>
+            ${ew.sqlSegment}
+        </where>
+    </select>
+    <select id="selectQMData" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeA,
+        (select count(*) from orders where (order_progress = 8 or order_progress = 9) and created_time between #{startTime} and  #{overTime}) as typeB,
+        (select count(*) from orders where (order_progress = 12 or  order_progress = 13 )and created_time between #{startTime} and  #{overTime}) as typeC,
+        (select count(*) from order_const_log where make_up > 0 and created_time between #{startTime} and  #{overTime}) as typeD
+        from orders where (order_progress = 10 or order_progress = 11 ) and created_time between #{startTime} and  #{overTime}
+    </select>
+
+    <select id="selectZJData" resultType="String">
+        select order_num from orders where overFlag = 0
+    </select>
+
+    <select id="selectZJDataForMsg" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeA,
+        (select count(*) from orders where order_progress = 30 and overFlag = 0) as typeB,
+        (select count(*) from orders where order_progress = 31 and overFlag = 0) as typeC,
+        (select count(*) from orders where urag>0 and overFlag = 0) as typeD,
+        (select count(*) from orders where overFlag = 0 and to_days(rea_time) = to_days(now())) as typeE,
+        (select count(*) from orders where overFlag = 0 and to_days(rea_time) = to_days(now())) as typeF
+        from orders where overFlag = 0
+    </select>
+
+    <select id="selectTeamData" resultType="String">
+        select order_num from order_team where team_id = #{teamId} and (select overFlag from orders where order_num = order_team.order_num and rea_time is null ) =0  GROUP BY order_num
+    </select>
+
+    <select id="selectDriver" resultType="cn.stylefeng.guns.yinhua.entity.yinhua.order.RestOrderCount">
+        select count(*) as typeC,
+        (select count(*) from  orders where last_const=0 and overFlag = 0 and order_num in (select order_num from order_prop where type=#{px} and do_over = 0)) as typeB,
+        (select count(*) from  orders where overFlag = 0 and order_num in (select order_num from order_prop where type=#{px} and do_over = 0)) as typeA
+        from orders where last_const!=0 and overFlag = 0 and order_num in (select order_num from order_prop where type=#{px} and do_over = 0)
+    </select>
+    <select id="selectTodayCount" resultType="java.lang.Integer">
+        select count(*) from orders
+        <where>
+            ${ew.sqlSegment}
+        </where>
+        and to_days(rea_time) = to_days(now())
+    </select>
+    <select id="selectMyOrderByUserIdForToday" resultType="java.lang.String">
+        select order_num from order_team
+        where
+        <if test="px == 0">
+            team_id in  (select team_id from user_team_u where user_id = #{userId})
+        </if>
+        <if test="px == 1">
+            team_id in  (select team_id from user_team_u where user_id = #{userId}) and (type = 0 or (type is null and user_id =#{userId}))
+        </if>
+        and (select overFlag from orders where to_days(rea_time)=to_days(now()) and order_num = order_team.order_num) = 0
+        group by order_num
+    </select>
+
+    <select id="selectTypeNumByOrderNum" resultType="java.lang.Integer">
+        select (case
+				when order_role.name like ('%印花%') then 1
+				when order_role.name like ('%激光%') then 2
+				when order_role.name like ('%移膜%') then 3
+				end
+				) as tye  from order_role where id = (select order_type from orders where order_num = #{orderNum})
+    </select>
+    <select id="findOverFp" resultType="java.lang.Integer">
+        select over_fp from orders where order_num = #{orderNum}
+    </select>
+    <select id="selectMyOrderByUserId" resultType="java.lang.String">
+        select order_num from order_team
+        where
+        <if test="px == 0">
+            team_id in  (select team_id from user_team_u where user_id = #{userId})
+        </if>
+        <if test="px == 1">
+            team_id in  (select team_id from user_team_u where user_id = #{userId}) and (type = 0 or (type is null and user_id =#{userId}))
+        </if>
+        and (select overFlag from orders where rea_time is null and order_num = order_team.order_num) = 0
+        group by order_num
+    </select>
+
+    <select id="selectDataFor" resultType="java.util.Map">
+        select count(*) as type1,
+        (select count(*) from order_prop where type = '1234730078953291778' and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0) ) as type2,
+        (select count(*) from order_prop where type = '1234730294012035073'  and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0 ) ) as type3,
+        (select count(*) from order_prop where type = '1234733172114079747' and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0 ) ) as type4,
+        (select count(*) from order_prop where type = '1234731728963125250'and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0)  ) as type5,
+        (select count(*) from order_prop where type = '1234731875721822209'and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0)  ) as type6,
+        (select count(*) from order_prop where type = '1234731593336111106'and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0 and status between 0 and 3 )  ) as type7,
+        (select count(*) from order_prop where type = '1237267345014022146'and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0)  ) as type8
+        from order_prop where type = '1234729858706194434'  and do_over = 0 and order_num in (select order_num from orders where order_num = order_prop.order_num and overFlag = 0)
+    </select>
+    <select id="selectMyOrderByUserIdForUn" resultType="java.lang.String">
+        select order_num from order_team
+        where
+        <if test="px == 0">
+            team_id in  (select team_id from user_team_u where user_id = #{userId})
+        </if>
+        <if test="px == 1">
+            team_id in  (select team_id from user_team_u where user_id = #{userId}) and (type = 0 or (type is null and user_id =#{userId}))
+        </if>
+        group by order_num
+    </select>
+
+    <select id="selectByUserId" resultType="java.lang.String">
+        select account from sys_user
+        where user_id = #{id}
+    </select>
+</mapper>

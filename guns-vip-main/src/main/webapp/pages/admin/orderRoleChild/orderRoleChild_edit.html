@@ -1,0 +1,89 @@
+@layout("/common/_form.html",{js:["/assets/admin/orderRoleChild/orderRoleChild_edit.js"]}){
+
+<form class="layui-form" id="orderRoleChildForm" lay-filter="orderRoleChildForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">基本信息</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <input name="id" type="hidden"/>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">类型名称</label>
+                        <div class="layui-input-block">
+                        <select id="name" name="name" lay-filter="name" lay-search="">
+                            @for(s in name){
+                            <option value="${s.name}">${s.name}</option>
+                            @}
+                        </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">生产单进度</label>
+                        <div class="layui-input-block">
+                            <select id="type" name="type" lay-filter="type">
+                                <option value="0" selected="">未下单</option>
+                                <option value="1">开发</option>
+                                <option value="14">同款首样</option>
+                                <option value="2">首样</option>
+                                <option value="3">改版</option>
+                                <option value="4">翻样</option>
+                                <option value="5">产前样</option>
+                                <option value="6">首单</option>
+                                <option value="7">翻单</option>
+                                <option value="8">补片（打样）</option>
+                                <option value="9">补片（大货）</option>
+                                <option value="10">返工（打样）</option>
+                                <option value="11">返工（大货）</option>
+                                <option value="12">重做（打样）</option>
+                                <option value="13">重做（大货）</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table class="layui-table" id="table" lay-filter="table">
+                        <a class="layui-btn layui-btn-xs add">添加</a>
+                        <thead>
+                        <tr>
+                            <td>功能</td>
+                            <td>角色</td>
+                            <td>顺序</td>
+                            <td>操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @for(p in parent){
+                        <tr>
+                            <td>
+                                <select id="menu" name="menu" lay-filter="menu">
+                                    @for(m in menu){
+                                    <option value="${m.name}|${m.menuId}" ${p.type == (m.menuId+'') ?'selected':''}>${m.name}</option>
+                                    @}
+                                </select>
+                            </td>
+                            <td>
+                                <select id="people" name="people" lay-filter="people">
+                                    @for(s in people){
+                                    <option value="${s.name}|${s.roleId}" ${(s.roleId+'') == p.name ?'selected':''}>${s.name}</option>
+                                    @}
+                                </select>
+                            </td>
+                            <td><input type="number" value="${p.shunxu}"  class="layui-input" name="sx"></td>
+                            <td>
+                                <a class="layui-btn layui-btn-danger layui-btn-xs del">删除</a>
+                                <a class="layui-btn layui-btn-xs config" data="${p.num}">推送配置</a>
+                            </td>
+                        </tr>
+                        @}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmitChild" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}
